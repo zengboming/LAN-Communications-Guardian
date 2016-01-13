@@ -103,7 +103,7 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>C:\Program Files\MySQL\MySQL Server 5.7\include</AdditionalIncludeDirectories>
     </ClCompile>
@@ -153,6 +153,8 @@
   <ItemGroup>
     <ClCompile Include="db.cpp" />
     <ClCompile Include="db_help.cpp" />
+    <ClCompile Include="E:\研究生\实训\Service.cpp" />
+    <ClCompile Include="socket.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="libmysql.dll" />

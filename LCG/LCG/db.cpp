@@ -6,7 +6,7 @@
 #include "struct.h"
 using namespace std;
  
-int main() {
+/*int main() {
 
 	DB_Help *db_help=new DB_Help(); 
 	Computer co, *com1;
@@ -84,13 +84,53 @@ int main() {
 	bool b = db_help->insert_forbidweb(fb);   
 	cout << b;*/
 
+	/*Senstive st;
+	st.ip = "192.168.90.90";
+	st.word = "nima";
+	bool b = db_help->insert_senstive(st);
+	cout << b;*/
 
+	/*Computer cp;
+	cp.ip = "192.168.60.60";
+	cp.online = 1;
+	bool b = db_help->insert_computer(cp);
+	cout << b;*/
 
+	/*Customer ct ;
+	ct.name = "hust";
+	ct.password = "hust2015";
+	bool b = db_help->insert_customer(ct);
+	cout << b;*/
 
-
-
-
-
+	/*
+	//显示五张表中某表全部信息
+	void* sql_all(int k)
+	//查询某电脑信息
+	struct Computer select_computer(char *ip)
+	//查询某电脑历史记录
+	struct History* select_history(char *ip)
+	//查询某电脑禁止访问的网站
+	struct Forbidweb * select_forbidweb(char* ip)
+	//查询登录用户
+	struct Customer login(char* name, char* password)
+	//删除某一计算机
+	bool delete_computer(char *ip)
+	//删除某个禁止访问的网址
+	bool delete_forbidweb(char* ip, char* web)
+	//删除某个铭感词
+	bool delete_senstive(char* ip, char* word)
+	//删除某计算机的历史
+	bool delete_history(char* ip)
+	//插入到forbidweb表
+	bool insert_forbidweb(Forbidweb fb)
+	//插入到senstive表
+	bool insert_senstive(Senstive st)
+	//插入到computer表
+	bool insert_computer(Computer cp)
+	//插入到history表
+	bool insert_history(History ht)
+	//注册管理员
+	bool insert_customer(Customer ct)*/
 
 
 	/*
@@ -162,5 +202,5 @@ int main() {
 	if (result != NULL) mysql_free_result(result);
 	mysql_close(con);
 	*/
-	return 0;
-}
+	/*return 0;
+}*/

@@ -384,7 +384,7 @@ class DB_Help {
 			if (!res) {
 				result = mysql_store_result(mysql);
 				if (result) {
-					row = mysql_fetch_row(result);
+					//row = mysql_fetch_row(result);
 					int i = mysql_num_rows(result);
 					if (i != 0) {
 						return false;
@@ -392,6 +392,128 @@ class DB_Help {
 				}
 			}
 			sprintf_s(sql, 100, "insert into forbidweb (ip,web) values('%s','%s')",fb.ip.c_str(),fb.web.c_str());
+			//c_str()将string转为char*
+			mysql_query(mysql, "SET NAMES GBK");//设置编码格式
+			res = mysql_query(mysql, sql);
+			if (res) {
+				cout << "faild" << endl;
+				return false;
+			}
+			else {
+				cout << "succeed" << endl;
+				return true;
+			}
+		}
+
+		//插入到senstive表
+		bool insert_senstive(Senstive st) {
+			char *sql = (char*)malloc(100);
+			sprintf_s(sql, 100, "select * from senstive where ip='%s' and word='%s'", st.ip.c_str(), st.word.c_str());
+			mysql_query(mysql, "SET NAMES GBK");//设置编码格式
+			int res;
+			res = mysql_query(mysql, sql);
+			if (!res) {
+				result = mysql_store_result(mysql);
+				if (result) {
+					int i = mysql_num_rows(result);
+					if (i != 0) {
+						return false;
+					}
+				}
+			}
+			sprintf_s(sql, 100, "insert into senstive (ip,word) values('%s','%s')", st.ip.c_str(), st.word.c_str());
+			//c_str()将string转为char*
+			mysql_query(mysql, "SET NAMES GBK");//设置编码格式
+			res = mysql_query(mysql, sql);
+			if (res) {
+				cout << "faild" << endl;
+				return false;
+			}
+			else {
+				cout << "succeed" << endl;
+				return true;
+			}
+		}
+
+		//插入到computer表
+		bool insert_computer(Computer cp) {
+			char *sql = (char*)malloc(100);
+			sprintf_s(sql, 100, "select * from computer where ip='%s'", cp.ip.c_str());
+			mysql_query(mysql, "SET NAMES GBK");//设置编码格式
+			int res;
+			res = mysql_query(mysql, sql);
+			if (!res) {
+				result = mysql_store_result(mysql);
+				if (result) {
+					int i = mysql_num_rows(result);
+					if (i != 0) {
+						return false;
+					}
+				}
+			}
+			sprintf_s(sql, 100, "insert into computer (ip,online) values('%s','%d')", cp.ip.c_str(), cp.online);
+			//c_str()将string转为char*
+			mysql_query(mysql, "SET NAMES GBK");//设置编码格式
+			res = mysql_query(mysql, sql);
+			if (res) {
+				cout << "faild" << endl;
+				return false;
+			}
+			else {
+				cout << "succeed" << endl;
+				return true;
+			}
+		}
+
+		//注册管理员
+		bool insert_customer(Customer ct) {
+			char *sql = (char*)malloc(100);
+			sprintf_s(sql, 100, "select * from customer where name='%s'",ct.name.c_str());
+			mysql_query(mysql, "SET NAMES GBK");//设置编码格式
+			int res;
+			res = mysql_query(mysql, sql);
+			if (!res) {
+				result = mysql_store_result(mysql);
+				if (result) {
+					int i = mysql_num_rows(result);
+					if (i != 0) {
+						return false;
+					}
+				}
+			}
+			sprintf_s(sql, 100, "insert into customer (name,password,email) values('%s','%s','%s')",
+				ct.name.c_str(), ct.password.c_str(),ct.email.c_str());
+			//c_str()将string转为char*
+			mysql_query(mysql, "SET NAMES GBK");//设置编码格式
+			res = mysql_query(mysql, sql);
+			if (res) {
+				cout << "faild" << endl;
+				return false;
+			}
+			else {
+				cout << "succeed" << endl;
+				return true;
+			}
+		}
+
+		//插入到history表
+		bool insert_history(History ht) {
+			char *sql = (char*)malloc(100);
+			sprintf_s(sql, 100, "select * from history where ip='%s' and address='%s'", ht.ip.c_str(), ht.address.c_str());
+			mysql_query(mysql, "SET NAMES GBK");//设置编码格式
+			int res;
+			res = mysql_query(mysql, sql);
+			if (!res) {
+				result = mysql_store_result(mysql);
+				if (result) {
+					//row = mysql_fetch_row(result);
+					int i = mysql_num_rows(result);
+					if (i != 0) {
+						return false;
+					}
+				}
+			}
+			sprintf_s(sql, 100, "insert into history (ip,address) values('%s','%s')", ht.ip.c_str(), ht.address.c_str());
 			//c_str()将string转为char*
 			mysql_query(mysql, "SET NAMES GBK");//设置编码格式
 			res = mysql_query(mysql, sql);
