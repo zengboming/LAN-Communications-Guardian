@@ -36,6 +36,7 @@ struct  History
 {
 	string ip;
 	string address;
+	string time;
 };
 
 struct Customer {

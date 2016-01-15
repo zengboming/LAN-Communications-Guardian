@@ -121,6 +121,8 @@ class DB_Help {
 							case HISTORY_TABLE:
 								his[x].ip = row[1];
 								his[x].address = row[2];
+								if (row[3] == NULL) { his[x].time = "unknow"; }
+								else{ his[x].time = row[3]; }
 								break;
 							}
 							x++;
@@ -184,7 +186,7 @@ class DB_Help {
 		//查询某电脑历史记录
 		struct History* select_history(char *ip) {
 			char *sql = (char*)malloc(100);
-			sprintf_s(sql, 100, "select address from history where ip = '%s'", ip);
+			sprintf_s(sql, 100, "select address,time from history where ip = '%s'", ip);
 			mysql_query(mysql, "SET NAMES GBK");//设置编码格式
 			int res;
 			res = mysql_query(mysql, sql);
@@ -202,6 +204,8 @@ class DB_Help {
 						while (row = mysql_fetch_row(result)) {//获取每行具体数据
 							his[j].ip = ip;
 							his[j].address = row[0];
+							if (row[1]== NULL) { his[j].time = "unknow"; }
+							else { his[j].time = row[1]; }
 							j++;
 						}
 						return his;
@@ -513,7 +517,7 @@ class DB_Help {
 					}
 				}
 			}
-			sprintf_s(sql, 100, "insert into history (ip,address) values('%s','%s')", ht.ip.c_str(), ht.address.c_str());
+			sprintf_s(sql, 100, "insert into history (ip,address,time) values('%s','%s','%s')", ht.ip.c_str(), ht.address.c_str(),ht.time.c_str());
 			//c_str()将string转为char*
 			mysql_query(mysql, "SET NAMES GBK");//设置编码格式
 			res = mysql_query(mysql, sql);

@@ -6,31 +6,31 @@
 #include "struct.h"
 using namespace std;
  
+
 /*int main() {
 
 	DB_Help *db_help=new DB_Help(); 
 	Computer co, *com1;
 	Senstive se, *sen1;
 	Forbidweb fo, *fob1;
-	History hi, *his1;
+	History hi, *his1; 
 	Customer cu;    
 
 	/*com1=(struct Computer *)db_help->sql_all(COMPUTER_TABLE);  
+	cout << "com" << com1[0].ip << "	" << com1[0].online << endl;
 	//db_help->sql_all(CUSTOMER_TABLE);
-	sen1 = (struct Senstive *)db_help->sql_all(SENSTIVE_TABLE);*/
-	/*
+	sen1 = (struct Senstive *)db_help->sql_all(SENSTIVE_TABLE);
+	cout << "sen" << sen1[0].ip << "	" << sen1[0].word << endl;
+
 	fob1 = (struct Forbidweb*)db_help->sql_all(FORBIDWEB_TABLE);
 	cout << "fob" << fob1[0].ip << "	" << fob1[0].web << endl;
 	cout << "fob" << fob1[1].ip << "	" << fob1[1].web << endl;
 	cout << "fob" << fob1[2].ip << "	" << fob1[2].web << endl;
 	cout << "fob" << fob1[3].ip << "	" << fob1[3].web << endl;
-	cout << "fob" << fob1[4].ip << "	" << fob1[4].web << endl;
-	*/
-	/*his1 = (struct History  *)db_help->sql_all(HISTORY_TABLE);
-	cout << "com" <<com1[0].ip << "	" << com1[0].online << endl;
-	cout << "sen" <<sen1[0].ip << "	" << sen1[0].word << endl;
-	cout << "fob" <<fob1[0].ip << "	" << fob1[0].web << endl;
-	cout << "his" <<his1[0].ip << "	" << his1[0].address << endl;*/
+	cout << "fob" << fob1[4].ip << "	" << fob1[4].web << endl;*/
+
+	//his1 = (struct History  *)db_help->sql_all(HISTORY_TABLE);
+	//cout << "his" <<his1[0].ip << "	" << his1[0].address << "	"<<his1[0].time<<endl;   
 	
 	/*co=db_help->select_computer("192.168.60.60");   
 	if (co.ip=="0") {    
@@ -48,9 +48,9 @@ using namespace std;
 		cout << "no" << endl; 
 	}
 	else {
-		cout << "his:" << his1[0].ip << "	" << his1[0].address << endl; 
-	}*/
-
+		cout << "his:" << his1[0].ip << "	" << his1[0].address <<"	"<<his1[0].time<< endl; 
+	}
+	*/
 	/*
 	fob1 = db_help->select_forbidweb("192.168.90.90");  
 	if (fob1[0].ip == "0") {
@@ -100,6 +100,13 @@ using namespace std;
 	ct.name = "hust";
 	ct.password = "hust2015";
 	bool b = db_help->insert_customer(ct);
+	cout << b;*/
+
+	/*History h;
+	h.ip = "192.168.0.1";
+	h.address = "www.tianmao.com";
+	h.time = "2016.1.1,12:34";
+	bool b = db_help->insert_history(h);
 	cout << b;*/
 
 	/*
