@@ -2,19 +2,20 @@
 #include <fstream>
 #include <string>
 #include <Winsock2.h>
+#include "struct.h"
 #include <iostream>
 #pragma comment( lib, "ws2_32.lib" )// 链接Winsock2.h的静态库文件 
 #define _WINSOCK_DEPRECATED_NO_WARNINGS
 using namespace std;
 
-struct Test {
+/*struct Test {
 	char ip[30];
 	char name[30];
 };
 struct Test1 {
 	string ip;
 	string name;
-};
+};*/
 
 
 void main()
@@ -43,9 +44,8 @@ void main()
 	addrSrv.sin_port = htons(6000);
 	connect(sockClient, (SOCKADDR*)&addrSrv, sizeof(SOCKADDR));
 
-	//cp.ip = "192.168.0.1";
-	//cp.name = "zbm";
-	Test cp;
+	
+	/*Test cp;
 	memset(&cp, 0x00, sizeof(Test));
 	memcpy(cp.ip,"192.168.0.1",sizeof("192.168.0.1"));
 	memcpy(cp.name, "hello", sizeof("hello"));
@@ -66,6 +66,7 @@ void main()
 	char recvBuf[50];
 	//recv(sockClient, recvBuf, 50, 0);
 	//printf("%s\n", recvBuf);
+	*/
 
 	closesocket(sockClient);
 	WSACleanup();

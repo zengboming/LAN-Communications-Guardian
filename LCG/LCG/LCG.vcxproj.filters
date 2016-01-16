@@ -21,10 +21,10 @@
     <ClCompile Include="db_help.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="E:\研究生\实训\Service.cpp">
+    <ClCompile Include="socket.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="socket.cpp">
+    <ClCompile Include="Service.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

@@ -110,35 +110,35 @@ using namespace std;
 	cout << b;*/
 
 	/*
-	//显示五张表中某表全部信息
-	void* sql_all(int k)
+	//显示五张表中某表全部信息                             Command:
+	void* sql_all(int k)									  a
 	//查询某电脑信息
-	struct Computer select_computer(char *ip)
+	struct Computer select_computer(char *ip)                 b
 	//查询某电脑历史记录
-	struct History* select_history(char *ip)
+	struct History* select_history(char *ip)                  c
 	//查询某电脑禁止访问的网站
-	struct Forbidweb * select_forbidweb(char* ip)
+	struct Forbidweb * select_forbidweb(char* ip)             d
 	//查询登录用户
-	struct Customer login(char* name, char* password)
+	struct Customer login(char* name, char* password)         e
 	//删除某一计算机
-	bool delete_computer(char *ip)
+	bool delete_computer(char *ip)                            f
 	//删除某个禁止访问的网址
-	bool delete_forbidweb(char* ip, char* web)
+	bool delete_forbidweb(char* ip, char* web)                g
 	//删除某个铭感词
-	bool delete_senstive(char* ip, char* word)
+	bool delete_senstive(char* ip, char* word)                h
 	//删除某计算机的历史
-	bool delete_history(char* ip)
+	bool delete_history(char* ip)                             i
 	//插入到forbidweb表
-	bool insert_forbidweb(Forbidweb fb)
+	bool insert_forbidweb(Forbidweb fb)                       j
 	//插入到senstive表
-	bool insert_senstive(Senstive st)
+	bool insert_senstive(Senstive st)                         k
 	//插入到computer表
-	bool insert_computer(Computer cp)
+	bool insert_computer(Computer cp)                         l
 	//插入到history表
-	bool insert_history(History ht)
+	bool insert_history(History ht)                           m
 	//注册管理员
-	bool insert_customer(Customer ct)*/
-
+	bool insert_customer(Customer ct)                         n
+	*/
 
 	/*
 	MYSQL * con; //= mysql_init((MYSQL*) 0); 
