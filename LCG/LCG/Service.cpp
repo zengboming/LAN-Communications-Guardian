@@ -84,6 +84,7 @@ bool SendFile(const SOCKET &sSendSocket, const char* const cPath)
 }
 
 
+
 int main()
 {
 	WSADATA wsa;
@@ -119,26 +120,43 @@ int main()
 		send(serConn, sendBuf, strlen(sendBuf) + 1, 0);
 
 		//接收的信息
-		char recvBuff[100];
-		char buff[99];
-		void* table;
-		int k;
-		bool b;
-		char command;
+		char recvBuff[100];	//接受的字符串
+		char buff[99];		//由结构体强转的字符串
+		void* table;		//
+		int k;				//sql_all参数
+		bool b;				//返回成功与否
+		char command;		//命令
+		//数据库中使用的结构体
 		Customer  cus,*cu;
 		Computer  com,*co;
 		History   his,*hi;
 		Senstive  sen,*se;
 		Forbidweb fob,*fo;
+		//socket中使用的结构体
+		Customer1  cus1,*cu1;
+		Computer1  com1,*co1;
+		History1   his1,*hi1;
+		Senstive1  sen1,*se1;
+		Forbidweb1 fob1,*fo1;
+		//操作数据库的对象
 		DB_Help *db_help = new DB_Help();
 		//初始化清空
 		memset(recvBuff, 0, 100);
 		memset(buff, 0, 99);
+
 		memset(&cus, 0x00, sizeof(Customer));
 		memset(&com, 0x00, sizeof(Computer));
 		memset(&his, 0x00, sizeof(History));
 		memset(&sen, 0x00, sizeof(Senstive));
 		memset(&fob, 0x00, sizeof(Forbidweb));
+
+		memset(&cus1, 0x00, sizeof(Customer1));
+		memset(&com1, 0x00, sizeof(Computer1));
+		memset(&his1, 0x00, sizeof(History1));
+		memset(&sen1, 0x00, sizeof(Senstive1));
+		memset(&fob1, 0x00, sizeof(Forbidweb1));
+
+
 		//接收并处理
 		recv(serConn, recvBuff, sizeof(recvBuff), NULL);
 		command = recvBuff[0];
@@ -173,8 +191,8 @@ int main()
 			break;
 		case 'e':
 			//查询登录用户
-			cus = *(Customer*)buff;
-			cus = db_help->login(cus.name, cus.password);
+			cus1 = *(Customer1*)buff;                        //接受的Customer1
+			cus = db_help->login(cus1.name, cus1.password);	 //返回的Customer
 			cout << "cus:" << cus.name << "	" << cus.password << "	" << cus.email << endl;
 			break;
 		case 'f':
@@ -184,49 +202,60 @@ int main()
 			break;
 		case 'g':
 			//删除某个禁止访问的网址
-			fob = *(Forbidweb*)buff;
-			b = db_help->delete_forbidweb(fob.ip, fob.web);
+			fob1 = *(Forbidweb1*)buff;
+			b = db_help->delete_forbidweb(fob1.ip, fob1.web);
 			cout << "b:" << b << endl;
 			break;
 		case 'h':
 			//删除某个敏感词
-			sen = *(Senstive*)buff;
-			b = db_help->delete_senstive(sen.ip, sen.word);
+			sen1 = *(Senstive1*)buff;
+			b = db_help->delete_senstive(sen1.ip, sen1.word);
 			cout << "b:" << b << endl;
 			break;
 		case 'i':
-			//删除某个历史记录
-			his = *(History*)buff;
-			b = db_help->delete_history(his.ip, his.address);
+			//删除某计算机历史记录
+			b = db_help->delete_history(buff);
 			cout << "b:" << b << endl;
 			break;
 		case 'j':
 			//插入到禁止访问网址表
-			fob = *(Forbidweb*)buff;
+			fob1 = *(Forbidweb1*)buff;
+			fob.ip = fob1.ip;
+			fob.web = fob1.web;
 			b = db_help->insert_forbidweb(fob);
 			cout << "b:" << b << endl;
 			break;
 		case 'k':
 			//插入到敏感词表
-			sen = *(Senstive*)buff;
+			sen1 = *(Senstive1*)buff;
+			sen.ip = sen1.ip;
+			sen.word = sen1.word;
 			b = db_help->insert_senstive(sen);
 			cout << "b:" << b << endl;
 			break;
 		case 'l':
 			//插入到计算机表
-			com = *(Computer*)buff;
+			com1 = *(Computer1*)buff;
+			com.ip = com1.ip;
+			com.online = com1.online;
 			b = db_help->insert_computer(com);
 			cout << "b:" << b << endl;
 			break;
 		case 'm':
 			//注册管理员
-			cus = *(Customer*)buff;
+			cus1 = *(Customer1*)buff;
+			cus.name = cus1.name;
+			cus.password = cus1.password;
+			cus.email = cus1.email;
 			b = db_help->insert_customer(cus);
 			cout << "b:" << b << endl;
 			break;
 		case 'n':
 			//插入到历史记录表
-			his = *(History*)buff;
+			his1 = *(History1*)buff;
+			his.ip = his1.ip;
+			his.address = his1.address;
+			his.time = his1.time;
 			b = db_help->insert_history(his);
 			cout << "b:" << b << endl;
 			break;
