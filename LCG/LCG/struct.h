@@ -14,6 +14,7 @@ using namespace std;
 //computer结构体
 struct Computer {
 	string  ip;
+	int num;
 	double up_speed;
 	double down_speed;
 	bool   online;
@@ -22,6 +23,7 @@ struct Computer {
 //senstive结构体
 struct  Senstive
 {
+	int num;
 	string ip;
 	string word;
 };
@@ -29,6 +31,7 @@ struct  Senstive
 //forbidweb结构体
 struct  Forbidweb
 {
+	int num;
 	string ip;
 	string web;
 };
@@ -36,6 +39,7 @@ struct  Forbidweb
 //history结构体
 struct  History
 {
+	int num;
 	string ip;
 	string address;
 	string time;

@@ -51,8 +51,7 @@ using namespace std;
 		cout << "his:" << his1[0].ip << "	" << his1[0].address <<"	"<<his1[0].time<< endl; 
 	}
 	*/
-	/*
-	fob1 = db_help->select_forbidweb("192.168.90.90");  
+	/*fob1 = db_help->select_forbidweb("192.168.100.100");  
 	if (fob1[0].ip == "0") {
 		cout << "no" << endl;  
 	}
@@ -60,8 +59,7 @@ using namespace std;
 		cout << "fob:" << fob1[0].ip << "	" << fob1[0].web << endl;
 		cout << "fob:" << fob1[1].ip << "	" << fob1[1].web << endl;
 		cout << "fob:" << fob1[2].ip << "	" << fob1[2].web << endl;
-	}
-	*/
+	}*/
 	
 	/*bool b = db_help->delete_forbidweb("0.0.0.0","www.csdn.com");   
 	cout << b << endl; 

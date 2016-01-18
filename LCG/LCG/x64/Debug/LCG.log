@@ -1,22 +1,28 @@
 ﻿  Service.cpp
 f:\vs2015\projects\lcg\lcg\db_help.cpp(91): warning C4244: “=”: 从“my_ulonglong”转换到“int”，可能丢失数据
-f:\vs2015\projects\lcg\lcg\db_help.cpp(109): warning C4800: “char *”: 将值强制为布尔值“true”或“false”(性能警告)
+f:\vs2015\projects\lcg\lcg\db_help.cpp(110): warning C4800: “char *”: 将值强制为布尔值“true”或“false”(性能警告)
 f:\vs2015\projects\lcg\lcg\db_help.cpp(85): warning C4101: “i”: 未引用的局部变量
-f:\vs2015\projects\lcg\lcg\db_help.cpp(161): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
-f:\vs2015\projects\lcg\lcg\db_help.cpp(169): warning C4800: “char *”: 将值强制为布尔值“true”或“false”(性能警告)
-f:\vs2015\projects\lcg\lcg\db_help.cpp(196): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
-f:\vs2015\projects\lcg\lcg\db_help.cpp(235): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
-f:\vs2015\projects\lcg\lcg\db_help.cpp(230): warning C4101: “res1”: 未引用的局部变量
-f:\vs2015\projects\lcg\lcg\db_help.cpp(273): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
-f:\vs2015\projects\lcg\lcg\db_help.cpp(327): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
-f:\vs2015\projects\lcg\lcg\db_help.cpp(347): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
-f:\vs2015\projects\lcg\lcg\db_help.cpp(372): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
-f:\vs2015\projects\lcg\lcg\db_help.cpp(392): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
-f:\vs2015\projects\lcg\lcg\db_help.cpp(422): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
-f:\vs2015\projects\lcg\lcg\db_help.cpp(452): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
-f:\vs2015\projects\lcg\lcg\db_help.cpp(482): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
-f:\vs2015\projects\lcg\lcg\db_help.cpp(514): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\lcg\lcg\db_help.cpp(165): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\lcg\lcg\db_help.cpp(173): warning C4800: “char *”: 将值强制为布尔值“true”或“false”(性能警告)
+f:\vs2015\projects\lcg\lcg\db_help.cpp(200): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\lcg\lcg\db_help.cpp(239): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\lcg\lcg\db_help.cpp(234): warning C4101: “res1”: 未引用的局部变量
+f:\vs2015\projects\lcg\lcg\db_help.cpp(277): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\lcg\lcg\db_help.cpp(331): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\lcg\lcg\db_help.cpp(351): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\lcg\lcg\db_help.cpp(376): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\lcg\lcg\db_help.cpp(396): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\lcg\lcg\db_help.cpp(426): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\lcg\lcg\db_help.cpp(456): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\lcg\lcg\db_help.cpp(486): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\lcg\lcg\db_help.cpp(518): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
 f:\vs2015\projects\lcg\lcg\service.cpp(50): warning C4244: “=”: 从“std::streamoff”转换到“long”，可能丢失数据
 f:\vs2015\projects\lcg\lcg\service.cpp(65): warning C4244: “=”: 从“std::streamoff”转换到“long”，可能丢失数据
-f:\vs2015\projects\lcg\lcg\service.cpp(119): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+f:\vs2015\projects\lcg\lcg\service.cpp(139): warning C4101: “co1”: 未引用的局部变量
+f:\vs2015\projects\lcg\lcg\service.cpp(138): warning C4101: “cu1”: 未引用的局部变量
+f:\vs2015\projects\lcg\lcg\service.cpp(132): warning C4101: “cu”: 未引用的局部变量
+f:\vs2015\projects\lcg\lcg\service.cpp(125): warning C4101: “table”: 未引用的局部变量
+f:\vs2015\projects\lcg\lcg\service.cpp(141): warning C4101: “se1”: 未引用的局部变量
+f:\vs2015\projects\lcg\lcg\service.cpp(142): warning C4101: “fo1”: 未引用的局部变量
+f:\vs2015\projects\lcg\lcg\service.cpp(140): warning C4101: “hi1”: 未引用的局部变量
   LCG.vcxproj -> F:\vs2015\Projects\LCG\x64\Debug\LCG.exe

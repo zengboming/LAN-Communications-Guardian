@@ -1,5 +1,11 @@
 ﻿  server.cpp
-f:\vs2015\projects\server\server\server.cpp(7): warning C4005: “_WINSOCK_DEPRECATED_NO_WARNINGS”: 宏重定义
-  f:\vs2015\projects\server\server\server.cpp(7): note: 命令行参数: 参见前面的“_WINSOCK_DEPRECATED_NO_WARNINGS”定义
-f:\vs2015\projects\server\server\server.cpp(68): warning C4101: “recvBuf”: 未引用的局部变量
+f:\vs2015\projects\server\server\server.cpp(8): warning C4005: “_WINSOCK_DEPRECATED_NO_WARNINGS”: 宏重定义
+  f:\vs2015\projects\server\server\server.cpp(8): note: 命令行参数: 参见前面的“_WINSOCK_DEPRECATED_NO_WARNINGS”定义
+f:\vs2015\projects\server\server\server.cpp(72): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+f:\vs2015\projects\server\server\server.cpp(76): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+f:\vs2015\projects\server\server\server.cpp(80): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+f:\vs2015\projects\server\server\server.cpp(84): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+f:\vs2015\projects\server\server\server.cpp(97): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+f:\vs2015\projects\server\server\server.cpp(119): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+f:\vs2015\projects\server\server\server.cpp(52): warning C4101: “hi1”: 未引用的局部变量
   server.vcxproj -> F:\vs2015\Projects\server\x64\Debug\server.exe

@@ -105,20 +105,24 @@ class DB_Help {
 							switch (k)
 							{
 							case COMPUTER_TABLE:
+								com[x].num = j;
 								com[x].ip = row[0];
 								com[x].online = row[1];
 								break;
 								//case CUSTOMER_TABLE:
 								//	break;
 							case SENSTIVE_TABLE:
+								sen[x].num = j;
 								sen[x].ip = row[2];
 								sen[x].word = row[1];
 								break;
 							case FORBIDWEB_TABLE:
+								fob[x].num = j;
 								fob[x].ip = row[2];
 								fob[x].web = row[1];
 								break;
 							case HISTORY_TABLE:
+								his[x].num = j;
 								his[x].ip = row[1];
 								his[x].address = row[2];
 								if (row[3] == NULL) { his[x].time = "unknow"; }
