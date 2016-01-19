@@ -21,9 +21,6 @@
     <ClCompile Include="db_help.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="socket.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="Service.cpp">
       <Filter>源文件</Filter>
     </ClCompile>

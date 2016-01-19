@@ -154,7 +154,6 @@
     <ClCompile Include="db.cpp" />
     <ClCompile Include="db_help.cpp" />
     <ClCompile Include="Service.cpp" />
-    <ClCompile Include="socket.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="libmysql.dll" />
