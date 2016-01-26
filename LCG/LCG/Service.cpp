@@ -390,23 +390,6 @@ int main()
 			cout << sendBuff[i];
 		}
 		cout << endl;*/
-		
-		
-
-		/*char newbuff[600];
-		memset(newbuff, 0, sizeof(newbuff));
-		recv(serConn,newbuff, sizeof(newbuff), NULL);
-		hi1 = *(History1**)newbuff;
-		cout << hi1[0].ip << "	" << hi1[0].address << " " << hi1[0].time << endl;*/
-		
-
-
-
-
-
-
-
-
 
 		//char recvBuf[100];
 		//recv(serConn, recvBuf, 50, 0);

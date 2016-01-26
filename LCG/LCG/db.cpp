@@ -109,7 +109,7 @@ using namespace std;
 
 	/*
 	//显示五张表中某表全部信息                             Command:
-	void* sql_all(int k)									  a
+	void* sql_all(int k)									  a  lenth 不加属性，有荣誉，将k作为引用，改变k的值为长度
 	//查询某电脑信息
 	struct Computer select_computer(char *ip)                 b
 	//查询某电脑历史记录
@@ -119,7 +119,7 @@ using namespace std;
 	//查询登录用户
 	struct Customer login(char* name, char* password)         e
 	//删除某一计算机
-	bool delete_computer(char *ip)                            f
+	bool delete_computer(char *ip)                            f   返回值从bool 改为int 返回受影响行数
 	//删除某个禁止访问的网址
 	bool delete_forbidweb(char* ip, char* web)                g
 	//删除某个铭感词
@@ -135,7 +135,14 @@ using namespace std;
 	//插入到history表
 	bool insert_history(History ht)                           m
 	//注册管理员
-	bool insert_customer(Customer ct)                         n
+	bool insert_customer(Customer ct)                         n    
+	//修改计算机
+	int update_computer(Computer cp)                          o
+	//修改敏感词
+	int update_senstive(Senstive st)                          p
+	//修改禁止网页
+	int update_forbidweb(Forbidweb fb)                        q
+	增加修改 函数 返回行数          时间改DATE
 	*/
 
 	/*

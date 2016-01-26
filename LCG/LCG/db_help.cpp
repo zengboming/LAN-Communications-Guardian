@@ -298,7 +298,7 @@ class DB_Help {
 		}
 
 		//删除某一计算机
-		bool delete_computer(char *ip) {
+		int delete_computer(char *ip) {
 			char *sql = (char*)malloc(100);
 			sprintf_s(sql, 100, "delete from computer where ip = '%s'", ip);
 			//char *sql = "select up_speed,down_speed,online from computer where ip='192.168.70.70'";
@@ -308,16 +308,16 @@ class DB_Help {
 			res = mysql_query(mysql, sql);
 			if (res) {
 				cout << "failed" << endl;
-				return false;
+				return 0;
 			}
 			else {
 				cout << "success!" << endl;
-				return true;
+				return 1;
 			}
 		} 
 
 		//删除某个禁止访问的网址
-		bool delete_forbidweb(char* ip, char* web) {
+		int delete_forbidweb(char* ip, char* web) {
 			char *sql = (char*)malloc(100);
 			sprintf_s(sql, 100, "delete from forbidweb where ip = '%s' and web = '%s'", ip,web);
 			mysql_query(mysql, "SET NAMES GBK");//设置编码格式
@@ -325,19 +325,19 @@ class DB_Help {
 			res = mysql_query(mysql, sql);
 			if (res) {
 				cout << "failed" << endl;
-				return false;
+				return 0;
 			}
 			else {
 				int i = mysql_affected_rows(mysql);
-				if (i == 0) { cout << "failed" << endl; return false; }
+				if (i == 0) { cout << "failed" << endl; return 0; }
 				else {
 					cout << "success!" << endl;
-					return true;
+					return 1;
 				}
 			}
 		}
 		//删除某个铭感词
-		bool delete_senstive(char* ip, char* word) {
+		int delete_senstive(char* ip, char* word) {
 			char *sql = (char*)malloc(100);
 			sprintf_s(sql, 100, "delete from senstive where ip = '%s' and word = '%s'", ip,word);
 			mysql_query(mysql, "SET NAMES GBK");//设置编码格式
@@ -345,14 +345,14 @@ class DB_Help {
 			res = mysql_query(mysql, sql);
 			if (res) {
 				cout << "failed" << endl;
-				return false;
+				return 0;
 			}
 			else {
 				int i = mysql_affected_rows(mysql);
-				if (i == 0) { cout << "failed" << endl; return false; }
+				if (i == 0) { cout << "failed" << endl; return 0; }
 				else {
 					cout << "success!" << endl;
-					return true;
+					return 1;
 				}
 			}
 		}
@@ -370,20 +370,20 @@ class DB_Help {
 			res = mysql_query(mysql, sql);
 			if (res) {
 				cout << "failed" << endl;
-				return false;
+				return 0;
 			}
 			else {
 				int i = mysql_affected_rows(mysql);
-				if (i == 0) { cout << "failed" << endl; return false; }
+				if (i == 0) { cout << "failed" << endl; return 0; }
 				else {
 					cout << "success!" << endl;
-					return true;
+					return 1;
 				}
 			}
 		}
 
 		//插入到forbidweb表
-		bool insert_forbidweb(Forbidweb fb) {
+		int insert_forbidweb(Forbidweb fb) {
 			char *sql = (char*)malloc(100);
 			sprintf_s(sql, 100, "select * from forbidweb where ip='%s' and web='%s'", fb.ip.c_str(), fb.web.c_str());
 			mysql_query(mysql, "SET NAMES GBK");//设置编码格式
@@ -395,7 +395,7 @@ class DB_Help {
 					//row = mysql_fetch_row(result);
 					int i = mysql_num_rows(result);
 					if (i != 0) {
-						return false;
+						return 0;
 					}
 				}
 			}
@@ -405,16 +405,16 @@ class DB_Help {
 			res = mysql_query(mysql, sql);
 			if (res) {
 				cout << "faild" << endl;
-				return false;
+				return 0;
 			}
 			else {
 				cout << "succeed" << endl;
-				return true;
+				return 1;
 			}
 		}
 
 		//插入到senstive表
-		bool insert_senstive(Senstive st) {
+		int insert_senstive(Senstive st) {
 			char *sql = (char*)malloc(100);
 			sprintf_s(sql, 100, "select * from senstive where ip='%s' and word='%s'", st.ip.c_str(), st.word.c_str());
 			mysql_query(mysql, "SET NAMES GBK");//设置编码格式
@@ -425,7 +425,7 @@ class DB_Help {
 				if (result) {
 					int i = mysql_num_rows(result);
 					if (i != 0) {
-						return false;
+						return 0;
 					}
 				}
 			}
@@ -435,16 +435,16 @@ class DB_Help {
 			res = mysql_query(mysql, sql);
 			if (res) {
 				cout << "faild" << endl;
-				return false;
+				return 0;
 			}
 			else {
 				cout << "succeed" << endl;
-				return true;
+				return 1;
 			}
 		}
 
 		//插入到computer表
-		bool insert_computer(Computer cp) {
+		int insert_computer(Computer cp) {
 			char *sql = (char*)malloc(100);
 			sprintf_s(sql, 100, "select * from computer where ip='%s'", cp.ip.c_str());
 			mysql_query(mysql, "SET NAMES GBK");//设置编码格式
@@ -455,7 +455,7 @@ class DB_Help {
 				if (result) {
 					int i = mysql_num_rows(result);
 					if (i != 0) {
-						return false;
+						return 0;
 					}
 				}
 			}
@@ -465,16 +465,16 @@ class DB_Help {
 			res = mysql_query(mysql, sql);
 			if (res) {
 				cout << "faild" << endl;
-				return false;
+				return 0;
 			}
 			else {
 				cout << "succeed" << endl;
-				return true;
+				return 1;
 			}
 		}
 
 		//注册管理员
-		bool insert_customer(Customer ct) {
+		int insert_customer(Customer ct) {
 			char *sql = (char*)malloc(100);
 			sprintf_s(sql, 100, "select * from customer where name='%s'",ct.name.c_str());
 			mysql_query(mysql, "SET NAMES GBK");//设置编码格式
@@ -485,7 +485,7 @@ class DB_Help {
 				if (result) {
 					int i = mysql_num_rows(result);
 					if (i != 0) {
-						return false;
+						return 0;
 					}
 				}
 			}
@@ -496,16 +496,16 @@ class DB_Help {
 			res = mysql_query(mysql, sql);
 			if (res) {
 				cout << "faild" << endl;
-				return false;
+				return 0;
 			}
 			else {
 				cout << "succeed" << endl;
-				return true;
+				return 1;
 			}
 		}
 
 		//插入到history表
-		bool insert_history(History ht) {
+		int insert_history(History ht) {
 			char *sql = (char*)malloc(100);
 			sprintf_s(sql, 100, "select * from history where ip='%s' and address='%s'", ht.ip.c_str(), ht.address.c_str());
 			mysql_query(mysql, "SET NAMES GBK");//设置编码格式
@@ -517,7 +517,7 @@ class DB_Help {
 					//row = mysql_fetch_row(result);
 					int i = mysql_num_rows(result);
 					if (i != 0) {
-						return false;
+						return 0;
 					}
 				}
 			}
@@ -527,11 +527,63 @@ class DB_Help {
 			res = mysql_query(mysql, sql);
 			if (res) {
 				cout << "faild" << endl;
-				return false;
+				return 0;
 			}
 			else {
 				cout << "succeed" << endl;
-				return true;
+				return 1;
 			}
 		}
+
+		//修改电脑是否在线
+		int update_computer(Computer cp) {
+			char *sql = (char*)malloc(100);
+			sprintf_s(sql, 100, "update computer set online='%d' where ip='%s'",cp.online,cp.ip);
+			mysql_query(mysql, "SET NAMES GBK");//设置编码格式
+			int res;
+			res = mysql_query(mysql, sql);
+			if (res) {
+				cout << "failed" << endl;
+				return 0;
+			}
+			else {
+				cout << "success!" << endl;
+				return 1;
+			}
+		}
+
+		//修改敏感词
+		int update_senstive(Senstive st) {
+			char *sql = (char*)malloc(100);
+			sprintf_s(sql, 100, "update senstive set word='%s' where ip='%s'",st.word,st.ip);
+			mysql_query(mysql, "SET NAMES GBK");//设置编码格式
+			int res;
+			res = mysql_query(mysql, sql);
+			if (res) {
+				cout << "failed" << endl;
+				return 0;
+			}
+			else {
+				cout << "success!" << endl;
+				return 1;
+			}
+		}
+
+		//修改禁止网站
+		int update_forbidweb(Forbidweb fb) {
+			char *sql = (char*)malloc(100);
+			sprintf_s(sql, 100, "update forbidweb set web='%s' where ip='%s'", fb.web, fb.ip);
+			mysql_query(mysql, "SET NAMES GBK");//设置编码格式
+			int res;
+			res = mysql_query(mysql, sql);
+			if (res) {
+				cout << "failed" << endl;
+				return 0;
+			}
+			else {
+				cout << "success!" << endl;
+				return 1;
+			}
+		}
+
 };

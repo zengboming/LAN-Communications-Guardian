@@ -1,0 +1,3 @@
+CliTest客户端
+DllMain是dll服务端
+NewTest是用来绑定进程的
