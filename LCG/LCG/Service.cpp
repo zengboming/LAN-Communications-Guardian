@@ -124,7 +124,7 @@ int main()
 		char buff[199];		//由结构体强转的字符串
 		void *table;
 		int k;				//sql_all参数
-		bool b;				//返回成功与否
+		int b;				//返回成功与否
 		char command;		//命令
 		//发送的信息
 		char sendBuff[200];
@@ -379,6 +379,18 @@ int main()
 			if (b) { memcpy(sendBuff, "1", sizeof("1")); }
 			else { memcpy(sendBuff, "0", sizeof("0")); }
 			send(serConn, sendBuff, sizeof(sendBuff) + 1, NULL);
+			break;
+		case 'o':
+			//修改计算机表
+			com1 = *(Computer1*)buff;
+			com.ip = com1.ip;
+			cout << "ip:" << com.ip << endl;
+			com.online = com1.online;
+			cout << "online:" << com.online << endl;
+			b = db_help->update_computer(com);
+			if (b) { memcpy(sendBuff, "1", sizeof("1")); }
+			else { memcpy(sendBuff, "0", sizeof("0")); }
+			send(serConn, sendBuff, sizeof(sendBuff) + 1, NULL); 
 			break;
 		default:
 			cout << "wrong command" << endl;

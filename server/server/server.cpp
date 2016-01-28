@@ -64,7 +64,7 @@ void main()
 	memset(&sen1, 0x00, sizeof(Senstive1));
 	memset(&fob1, 0x00, sizeof(Forbidweb1));
 
-	command = 'a';
+	command = 'o';
 	switch (command)
 	{
 	case 'a':
@@ -164,6 +164,14 @@ void main()
 		memcpy(cus1.email, "lufei@163.com", sizeof("lufei@163.com"));
 		memcpy(buff, &cus1, sizeof(cus1));
 		sendBuff[0] = 'n';
+		memcpy(sendBuff + 1, buff, sizeof(buff));
+		send(sockClient, sendBuff, sizeof(sendBuff) + 1, NULL);
+		break;
+	case 'o':
+		memcpy(com1.ip, "192.168.50.50", sizeof("192.168.40.40"));
+		com1.online = 1;
+		memcpy(buff, &com1, sizeof(com1));
+		sendBuff[0] = 'o';
 		memcpy(sendBuff + 1, buff, sizeof(buff));
 		send(sockClient, sendBuff, sizeof(sendBuff) + 1, NULL);
 		break;

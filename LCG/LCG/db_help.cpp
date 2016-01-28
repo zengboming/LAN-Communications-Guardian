@@ -357,7 +357,7 @@ class DB_Help {
 			}
 		}
 		//删除某计算机的历史
-		bool delete_history(char* ip) {
+		int delete_history(char* ip) {
 			char *sql = (char*)malloc(100);
 			if (ip == "0.0.0.0") {
 				sql="delete from history";
@@ -538,7 +538,8 @@ class DB_Help {
 		//修改电脑是否在线
 		int update_computer(Computer cp) {
 			char *sql = (char*)malloc(100);
-			sprintf_s(sql, 100, "update computer set online='%d' where ip='%s'",cp.online,cp.ip);
+			sprintf_s(sql, 100, "update computer set online='%d' where ip='%s'",cp.online,cp.ip.c_str());
+			cout << sql << endl;
 			mysql_query(mysql, "SET NAMES GBK");//设置编码格式
 			int res;
 			res = mysql_query(mysql, sql);
@@ -553,7 +554,7 @@ class DB_Help {
 		}
 
 		//修改敏感词
-		int update_senstive(Senstive st) {
+		/*int update_senstive(Senstive st) {
 			char *sql = (char*)malloc(100);
 			sprintf_s(sql, 100, "update senstive set word='%s' where ip='%s'",st.word,st.ip);
 			mysql_query(mysql, "SET NAMES GBK");//设置编码格式
@@ -567,10 +568,10 @@ class DB_Help {
 				cout << "success!" << endl;
 				return 1;
 			}
-		}
+		}*/
 
 		//修改禁止网站
-		int update_forbidweb(Forbidweb fb) {
+		/*int update_forbidweb(Forbidweb fb) {
 			char *sql = (char*)malloc(100);
 			sprintf_s(sql, 100, "update forbidweb set web='%s' where ip='%s'", fb.web, fb.ip);
 			mysql_query(mysql, "SET NAMES GBK");//设置编码格式
@@ -584,6 +585,6 @@ class DB_Help {
 				cout << "success!" << endl;
 				return 1;
 			}
-		}
+		}*/
 
 };
