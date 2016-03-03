@@ -64,12 +64,12 @@ void main()
 	memset(&sen1, 0x00, sizeof(Senstive1));
 	memset(&fob1, 0x00, sizeof(Forbidweb1));
 
-	command = 'o';
+	command = 'd';
 	switch (command)
 	{
 	case 'a':
 		//a 显示五张表中某表全部信息    
-		send(sockClient, "a5", strlen("a5") + 1, NULL);
+		send(sockClient, "a3", strlen("a3") + 1, NULL);
 		break;
 	case 'b':
 		//b 查询某电脑信息
@@ -77,16 +77,16 @@ void main()
 		break;
 	case 'c':
 		//c 查询某电脑历史记录
-		send(sockClient, "c192.168.100.100", strlen("c192.168.100.100") + 1, NULL);
+		send(sockClient, "c192.168.80.80", strlen("c192.168.80.80") + 1, NULL);
 		break;
 	case 'd':
 		//d 查询某电脑禁止访问的网站
-		send(sockClient, "d192.168.100.100", strlen("d192.168.100.100") + 1, NULL);
+		send(sockClient, "d192.168.90.90", strlen("d192.168.90.90") + 1, NULL);
 		break;
 	case 'e':
 		//e 查询登录用户
-		memcpy(cus1.name, "zbm", sizeof("zbm"));
-		memcpy(cus1.password, "zbm123", sizeof("zbm123"));
+		memcpy(cus1.name, "admin", sizeof("admin"));
+		memcpy(cus1.password, "admin", sizeof("admin"));
 		memcpy(buff, &cus1, sizeof(cus1));
 		sendBuff[0] = 'e';
 		memcpy(sendBuff + 1, buff, sizeof(buff));
@@ -176,16 +176,18 @@ void main()
 		send(sockClient, sendBuff, sizeof(sendBuff) + 1, NULL);
 		break;
 	}
-	cout << "ok" << endl;
+	//cout << "ok" << endl;
 
-	cout << "recvBuff:";
-	char recvBuff[200];
-	memset(recvBuff, 0, 200);
-	recv(sockClient, recvBuff, 200, 0);
-	for (int i = 0; i < sizeof(recvBuff); i++) {
-		cout << recvBuff[i];
+	for (int i = 0; i < 4; i++) {
+		cout << "接收服务器返回的消息recvBuff:";
+		char recvBuff[200];
+		memset(recvBuff, 0, 200);
+		recv(sockClient, recvBuff, 200, 0);
+		for (int i = 0; i < sizeof(recvBuff); i++) {
+			cout << recvBuff[i];
+		}
+		cout << endl;
 	}
-	cout << endl;
 
 	/*memcpy(hi1[0].ip, "192.168", sizeof("192.168"));
 	memcpy(hi1[0].address, "www.baidu.com", sizeof("www.baidu.com"));

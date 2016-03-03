@@ -1,0 +1,71 @@
+﻿  main.cpp
+f:\vs2015\projects\threadpoollib-master\main.cpp(1): warning C4627: “#include <iostream>”: 在查找预编译头使用时跳过
+  f:\vs2015\projects\threadpoollib-master\main.cpp(1): note: 将指令添加到“stdafx.h”或重新生成预编译头
+f:\vs2015\projects\threadpoollib-master\main.cpp(2): warning C4627: “#include "MyThreadPool.h"”: 在查找预编译头使用时跳过
+  f:\vs2015\projects\threadpoollib-master\main.cpp(2): note: 将指令添加到“stdafx.h”或重新生成预编译头
+f:\vs2015\projects\threadpoollib-master\main.cpp(3): warning C4627: “#include "MyThread.h"”: 在查找预编译头使用时跳过
+  f:\vs2015\projects\threadpoollib-master\main.cpp(3): note: 将指令添加到“stdafx.h”或重新生成预编译头
+f:\vs2015\projects\threadpoollib-master\main.cpp(4): warning C4627: “#include "TestTask.h"”: 在查找预编译头使用时跳过
+  f:\vs2015\projects\threadpoollib-master\main.cpp(4): note: 将指令添加到“stdafx.h”或重新生成预编译头
+f:\vs2015\projects\threadpoollib-master\main.cpp(24): fatal error C1010: 在查找预编译头时遇到意外的文件结尾。是否忘记了向源中添加“#include "stdafx.h"”?
+  TestTask.cpp
+f:\vs2015\projects\threadpoollib-master\testtask.cpp(1): warning C4627: “#include "TestTask.h"”: 在查找预编译头使用时跳过
+  f:\vs2015\projects\threadpoollib-master\testtask.cpp(1): note: 将指令添加到“stdafx.h”或重新生成预编译头
+f:\vs2015\projects\threadpoollib-master\testtask.cpp(20): fatal error C1010: 在查找预编译头时遇到意外的文件结尾。是否忘记了向源中添加“#include "stdafx.h"”?
+  Task.cpp
+f:\vs2015\projects\threadpoollib-master\task.cpp(1): warning C4627: “#include "Task.h"”: 在查找预编译头使用时跳过
+  f:\vs2015\projects\threadpoollib-master\task.cpp(1): note: 将指令添加到“stdafx.h”或重新生成预编译头
+f:\vs2015\projects\threadpoollib-master\task.cpp(2): warning C4627: “#include "windows.h"”: 在查找预编译头使用时跳过
+  f:\vs2015\projects\threadpoollib-master\task.cpp(2): note: 将指令添加到“stdafx.h”或重新生成预编译头
+f:\vs2015\projects\threadpoollib-master\task.cpp(16): fatal error C1010: 在查找预编译头时遇到意外的文件结尾。是否忘记了向源中添加“#include "stdafx.h"”?
+  MyThreadPool.cpp
+f:\vs2015\projects\threadpoollib-master\mythreadpool.cpp(1): warning C4627: “#include "MyThreadPool.h"”: 在查找预编译头使用时跳过
+  f:\vs2015\projects\threadpoollib-master\mythreadpool.cpp(1): note: 将指令添加到“stdafx.h”或重新生成预编译头
+f:\vs2015\projects\threadpoollib-master\mythreadpool.cpp(2): warning C4627: “#include "MyThread.h"”: 在查找预编译头使用时跳过
+  f:\vs2015\projects\threadpoollib-master\mythreadpool.cpp(2): note: 将指令添加到“stdafx.h”或重新生成预编译头
+f:\vs2015\projects\threadpoollib-master\mythreadpool.cpp(3): warning C4627: “#include "Task.h"”: 在查找预编译头使用时跳过
+  f:\vs2015\projects\threadpoollib-master\mythreadpool.cpp(3): note: 将指令添加到“stdafx.h”或重新生成预编译头
+f:\vs2015\projects\threadpoollib-master\mythreadpool.cpp(4): warning C4627: “#include <cassert>”: 在查找预编译头使用时跳过
+  f:\vs2015\projects\threadpoollib-master\mythreadpool.cpp(4): note: 将指令添加到“stdafx.h”或重新生成预编译头
+f:\vs2015\projects\threadpoollib-master\mythreadpool.cpp(5): warning C4627: “#include <iostream>”: 在查找预编译头使用时跳过
+  f:\vs2015\projects\threadpoollib-master\mythreadpool.cpp(5): note: 将指令添加到“stdafx.h”或重新生成预编译头
+f:\vs2015\projects\threadpoollib-master\mythreadpool.cpp(6): warning C4627: “#include "MyQueue.h"”: 在查找预编译头使用时跳过
+  f:\vs2015\projects\threadpoollib-master\mythreadpool.cpp(6): note: 将指令添加到“stdafx.h”或重新生成预编译头
+f:\vs2015\projects\threadpoollib-master\mythreadpool.cpp(104): fatal error C1010: 在查找预编译头时遇到意外的文件结尾。是否忘记了向源中添加“#include "stdafx.h"”?
+  MyThread.cpp
+f:\vs2015\projects\threadpoollib-master\mythread.cpp(1): warning C4627: “#include "MyThread.h"”: 在查找预编译头使用时跳过
+  f:\vs2015\projects\threadpoollib-master\mythread.cpp(1): note: 将指令添加到“stdafx.h”或重新生成预编译头
+f:\vs2015\projects\threadpoollib-master\mythread.cpp(2): warning C4627: “#include "task.h"”: 在查找预编译头使用时跳过
+  f:\vs2015\projects\threadpoollib-master\mythread.cpp(2): note: 将指令添加到“stdafx.h”或重新生成预编译头
+f:\vs2015\projects\threadpoollib-master\mythread.cpp(3): warning C4627: “#include "MyThreadPool.h"”: 在查找预编译头使用时跳过
+  f:\vs2015\projects\threadpoollib-master\mythread.cpp(3): note: 将指令添加到“stdafx.h”或重新生成预编译头
+f:\vs2015\projects\threadpoollib-master\mythread.cpp(4): warning C4627: “#include <cassert>”: 在查找预编译头使用时跳过
+  f:\vs2015\projects\threadpoollib-master\mythread.cpp(4): note: 将指令添加到“stdafx.h”或重新生成预编译头
+f:\vs2015\projects\threadpoollib-master\mythread.cpp(78): fatal error C1010: 在查找预编译头时遇到意外的文件结尾。是否忘记了向源中添加“#include "stdafx.h"”?
+  MyStack.cpp
+f:\vs2015\projects\threadpoollib-master\mystack.cpp(1): warning C4627: “#include "MyStack.h"”: 在查找预编译头使用时跳过
+  f:\vs2015\projects\threadpoollib-master\mystack.cpp(1): note: 将指令添加到“stdafx.h”或重新生成预编译头
+f:\vs2015\projects\threadpoollib-master\mystack.cpp(2): warning C4627: “#include <cassert>”: 在查找预编译头使用时跳过
+  f:\vs2015\projects\threadpoollib-master\mystack.cpp(2): note: 将指令添加到“stdafx.h”或重新生成预编译头
+f:\vs2015\projects\threadpoollib-master\mystack.cpp(3): warning C4627: “#include "MyThread.h"”: 在查找预编译头使用时跳过
+  f:\vs2015\projects\threadpoollib-master\mystack.cpp(3): note: 将指令添加到“stdafx.h”或重新生成预编译头
+f:\vs2015\projects\threadpoollib-master\mystack.cpp(62): fatal error C1010: 在查找预编译头时遇到意外的文件结尾。是否忘记了向源中添加“#include "stdafx.h"”?
+  MyQueue.cpp
+f:\vs2015\projects\threadpoollib-master\myqueue.cpp(1): warning C4627: “#include "MyQueue.h"”: 在查找预编译头使用时跳过
+  f:\vs2015\projects\threadpoollib-master\myqueue.cpp(1): note: 将指令添加到“stdafx.h”或重新生成预编译头
+f:\vs2015\projects\threadpoollib-master\myqueue.cpp(2): warning C4627: “#include "task.h"”: 在查找预编译头使用时跳过
+  f:\vs2015\projects\threadpoollib-master\myqueue.cpp(2): note: 将指令添加到“stdafx.h”或重新生成预编译头
+f:\vs2015\projects\threadpoollib-master\myqueue.cpp(71): fatal error C1010: 在查找预编译头时遇到意外的文件结尾。是否忘记了向源中添加“#include "stdafx.h"”?
+  MyMutex.cpp
+f:\vs2015\projects\threadpoollib-master\mymutex.cpp(1): warning C4627: “#include "MyMutex.h"”: 在查找预编译头使用时跳过
+  f:\vs2015\projects\threadpoollib-master\mymutex.cpp(1): note: 将指令添加到“stdafx.h”或重新生成预编译头
+f:\vs2015\projects\threadpoollib-master\mymutex.cpp(25): fatal error C1010: 在查找预编译头时遇到意外的文件结尾。是否忘记了向源中添加“#include "stdafx.h"”?
+  MyList.cpp
+f:\vs2015\projects\threadpoollib-master\mylist.cpp(1): warning C4627: “#include "MyList.h"”: 在查找预编译头使用时跳过
+  f:\vs2015\projects\threadpoollib-master\mylist.cpp(1): note: 将指令添加到“stdafx.h”或重新生成预编译头
+f:\vs2015\projects\threadpoollib-master\mylist.cpp(2): warning C4627: “#include <cassert>”: 在查找预编译头使用时跳过
+  f:\vs2015\projects\threadpoollib-master\mylist.cpp(2): note: 将指令添加到“stdafx.h”或重新生成预编译头
+f:\vs2015\projects\threadpoollib-master\mylist.cpp(3): warning C4627: “#include "MyThread.h"”: 在查找预编译头使用时跳过
+  f:\vs2015\projects\threadpoollib-master\mylist.cpp(3): note: 将指令添加到“stdafx.h”或重新生成预编译头
+f:\vs2015\projects\threadpoollib-master\mylist.cpp(71): fatal error C1010: 在查找预编译头时遇到意外的文件结尾。是否忘记了向源中添加“#include "stdafx.h"”?
+  正在生成代码...

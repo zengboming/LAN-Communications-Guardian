@@ -1,0 +1,17 @@
+﻿  TestTask.cpp
+f:\vs2015\projects\lcgthread\lcgthread\db_help.cpp(92): warning C4244: “=”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\lcgthread\lcgthread\db_help.cpp(111): warning C4800: “char *”: 将值强制为布尔值“true”或“false”(性能警告)
+f:\vs2015\projects\lcgthread\lcgthread\db_help.cpp(166): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\lcgthread\lcgthread\db_help.cpp(174): warning C4800: “char *”: 将值强制为布尔值“true”或“false”(性能警告)
+f:\vs2015\projects\lcgthread\lcgthread\db_help.cpp(201): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\lcgthread\lcgthread\db_help.cpp(244): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\lcgthread\lcgthread\db_help.cpp(286): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\lcgthread\lcgthread\db_help.cpp(364): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\lcgthread\lcgthread\db_help.cpp(384): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\lcgthread\lcgthread\db_help.cpp(409): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\lcgthread\lcgthread\db_help.cpp(429): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\lcgthread\lcgthread\db_help.cpp(459): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\lcgthread\lcgthread\db_help.cpp(489): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\lcgthread\lcgthread\db_help.cpp(519): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\lcgthread\lcgthread\db_help.cpp(551): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+  LCGThread.vcxproj -> F:\vs2015\Projects\LCGThread\x64\Debug\LCGThread.exe

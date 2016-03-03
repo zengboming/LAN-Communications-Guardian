@@ -1,0 +1,61 @@
+﻿  Win32Project1.cpp
+f:\vs2015\projects\win32project1\win32project1\win32project1.cpp(1): warning C4627: “#include <cassert>”: 在查找预编译头使用时跳过
+  f:\vs2015\projects\win32project1\win32project1\win32project1.cpp(1): note: 将指令添加到“stdafx.h”或重新生成预编译头
+f:\vs2015\projects\win32project1\win32project1\win32project1.cpp(2): warning C4627: “#include <vector>”: 在查找预编译头使用时跳过
+  f:\vs2015\projects\win32project1\win32project1\win32project1.cpp(2): note: 将指令添加到“stdafx.h”或重新生成预编译头
+f:\vs2015\projects\win32project1\win32project1\win32project1.cpp(3): warning C4627: “#include <queue>”: 在查找预编译头使用时跳过
+  f:\vs2015\projects\win32project1\win32project1\win32project1.cpp(3): note: 将指令添加到“stdafx.h”或重新生成预编译头
+f:\vs2015\projects\win32project1\win32project1\win32project1.cpp(212): error C2039: “queue”: 不是“std”的成员
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stddef.h(18): note: 参见“std”的声明
+f:\vs2015\projects\win32project1\win32project1\win32project1.cpp(212): error C2143: 语法错误: 缺少“;”(在“<”的前面)
+f:\vs2015\projects\win32project1\win32project1\win32project1.cpp(212): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+f:\vs2015\projects\win32project1\win32project1\win32project1.cpp(212): error C2238: 意外的标记位于“;”之前
+f:\vs2015\projects\win32project1\win32project1\win32project1.cpp(213): error C2039: “vector”: 不是“std”的成员
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stddef.h(18): note: 参见“std”的声明
+f:\vs2015\projects\win32project1\win32project1\win32project1.cpp(213): error C2143: 语法错误: 缺少“;”(在“<”的前面)
+f:\vs2015\projects\win32project1\win32project1\win32project1.cpp(213): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+f:\vs2015\projects\win32project1\win32project1\win32project1.cpp(213): error C2238: 意外的标记位于“;”之前
+f:\vs2015\projects\win32project1\win32project1\win32project1.cpp(31): error C3861: “assert”: 找不到标识符
+f:\vs2015\projects\win32project1\win32project1\win32project1.cpp(32): error C3861: “assert”: 找不到标识符
+f:\vs2015\projects\win32project1\win32project1\win32project1.cpp(33): error C3861: “assert”: 找不到标识符
+f:\vs2015\projects\win32project1\win32project1\win32project1.cpp(34): error C3861: “assert”: 找不到标识符
+f:\vs2015\projects\win32project1\win32project1\win32project1.cpp(44): error C2065: “vector”: 未声明的标识符
+f:\vs2015\projects\win32project1\win32project1\win32project1.cpp(44): error C2059: 语法错误:“>”
+f:\vs2015\projects\win32project1\win32project1\win32project1.cpp(44): error C2039: “iterator”: 不是“`global namespace'”的成员
+f:\vs2015\projects\win32project1\win32project1\win32project1.cpp(45): error C2065: “iter”: 未声明的标识符
+f:\vs2015\projects\win32project1\win32project1\win32project1.cpp(45): error C2065: “_ThreadVector”: 未声明的标识符
+f:\vs2015\projects\win32project1\win32project1\win32project1.cpp(45): error C2228: “.begin”的左边必须有类/结构/联合
+  f:\vs2015\projects\win32project1\win32project1\win32project1.cpp(45): note: 类型是“unknown-type”
+f:\vs2015\projects\win32project1\win32project1\win32project1.cpp(45): error C2228: “.end”的左边必须有类/结构/联合
+  f:\vs2015\projects\win32project1\win32project1\win32project1.cpp(45): note: 类型是“unknown-type”
+f:\vs2015\projects\win32project1\win32project1\win32project1.cpp(47): error C2065: “iter”: 未声明的标识符
+f:\vs2015\projects\win32project1\win32project1\win32project1.cpp(48): error C2065: “iter”: 未声明的标识符
+f:\vs2015\projects\win32project1\win32project1\win32project1.cpp(48): error C2541: “delete”: 不能删除不是指针的对象
+f:\vs2015\projects\win32project1\win32project1\win32project1.cpp(61): error C2065: “_ThreadVector”: 未声明的标识符
+f:\vs2015\projects\win32project1\win32project1\win32project1.cpp(61): error C2228: “.push_back”的左边必须有类/结构/联合
+  f:\vs2015\projects\win32project1\win32project1\win32project1.cpp(61): note: 类型是“unknown-type”
+f:\vs2015\projects\win32project1\win32project1\win32project1.cpp(62): error C3861: “assert”: 找不到标识符
+f:\vs2015\projects\win32project1\win32project1\win32project1.cpp(66): error C3861: “assert”: 找不到标识符
+f:\vs2015\projects\win32project1\win32project1\win32project1.cpp(80): error C3861: “assert”: 找不到标识符
+f:\vs2015\projects\win32project1\win32project1\win32project1.cpp(82): error C2065: “_JobQueue”: 未声明的标识符
+f:\vs2015\projects\win32project1\win32project1\win32project1.cpp(82): error C2228: “.push”的左边必须有类/结构/联合
+  f:\vs2015\projects\win32project1\win32project1\win32project1.cpp(82): note: 类型是“unknown-type”
+f:\vs2015\projects\win32project1\win32project1\win32project1.cpp(119): error C3861: “assert”: 找不到标识符
+f:\vs2015\projects\win32project1\win32project1\win32project1.cpp(121): error C3861: “assert”: 找不到标识符
+f:\vs2015\projects\win32project1\win32project1\win32project1.cpp(137): error C2039: “_JobQueue”: 不是“ThreadPool”的成员
+  f:\vs2015\projects\win32project1\win32project1\win32project1.cpp(20): note: 参见“ThreadPool”的声明
+f:\vs2015\projects\win32project1\win32project1\win32project1.cpp(137): error C2228: “.empty”的左边必须有类/结构/联合
+f:\vs2015\projects\win32project1\win32project1\win32project1.cpp(139): error C2039: “_JobQueue”: 不是“ThreadPool”的成员
+  f:\vs2015\projects\win32project1\win32project1\win32project1.cpp(20): note: 参见“ThreadPool”的声明
+f:\vs2015\projects\win32project1\win32project1\win32project1.cpp(139): error C2228: “.front”的左边必须有类/结构/联合
+f:\vs2015\projects\win32project1\win32project1\win32project1.cpp(140): error C2039: “_JobQueue”: 不是“ThreadPool”的成员
+  f:\vs2015\projects\win32project1\win32project1\win32project1.cpp(20): note: 参见“ThreadPool”的声明
+f:\vs2015\projects\win32project1\win32project1\win32project1.cpp(140): error C2228: “.pop”的左边必须有类/结构/联合
+f:\vs2015\projects\win32project1\win32project1\win32project1.cpp(141): error C3861: “assert”: 找不到标识符
+f:\vs2015\projects\win32project1\win32project1\win32project1.cpp(161): error C2039: “_ThreadVector”: 不是“ThreadPool”的成员
+  f:\vs2015\projects\win32project1\win32project1\win32project1.cpp(20): note: 参见“ThreadPool”的声明
+f:\vs2015\projects\win32project1\win32project1\win32project1.cpp(161): error C2228: “.erase”的左边必须有类/结构/联合
+f:\vs2015\projects\win32project1\win32project1\win32project1.cpp(161): error C2228: “.begin”的左边必须有类/结构/联合
+f:\vs2015\projects\win32project1\win32project1\win32project1.cpp(161): error C2228: “.end”的左边必须有类/结构/联合
+f:\vs2015\projects\win32project1\win32project1\win32project1.cpp(161): error C3861: “find”: 找不到标识符
+f:\vs2015\projects\win32project1\win32project1\win32project1.cpp(173): error C3861: “assert”: 找不到标识符

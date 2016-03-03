@@ -1,0 +1,593 @@
+﻿  main.cpp
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(92): warning C4244: “=”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(111): warning C4800: “char *”: 将值强制为布尔值“true”或“false”(性能警告)
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(86): warning C4101: “i”: 未引用的局部变量
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(166): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(174): warning C4800: “char *”: 将值强制为布尔值“true”或“false”(性能警告)
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(201): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(244): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(239): warning C4101: “res1”: 未引用的局部变量
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(286): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(364): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(384): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(409): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(429): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(459): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(489): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(519): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(551): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(12): error C2011: “DB_Help”:“class”类型重定义
+  f:\vs2015\projects\threadpoollib-master\db_help.cpp(12): note: 参见“DB_Help”的声明
+f:\vs2015\projects\threadpoollib-master\main.cpp(100): error C2027: 使用了未定义类型“DB_Help”
+  f:\vs2015\projects\threadpoollib-master\db_help.cpp(12): note: 参见“DB_Help”的声明
+f:\vs2015\projects\threadpoollib-master\main.cpp(139): error C2027: 使用了未定义类型“DB_Help”
+  f:\vs2015\projects\threadpoollib-master\db_help.cpp(12): note: 参见“DB_Help”的声明
+f:\vs2015\projects\threadpoollib-master\main.cpp(139): error C2227: “->sql_all”的左边必须指向类/结构/联合/泛型类型
+f:\vs2015\projects\threadpoollib-master\main.cpp(158): error C2027: 使用了未定义类型“DB_Help”
+  f:\vs2015\projects\threadpoollib-master\db_help.cpp(12): note: 参见“DB_Help”的声明
+f:\vs2015\projects\threadpoollib-master\main.cpp(158): error C2227: “->sql_all”的左边必须指向类/结构/联合/泛型类型
+f:\vs2015\projects\threadpoollib-master\main.cpp(175): error C2027: 使用了未定义类型“DB_Help”
+  f:\vs2015\projects\threadpoollib-master\db_help.cpp(12): note: 参见“DB_Help”的声明
+f:\vs2015\projects\threadpoollib-master\main.cpp(175): error C2227: “->sql_all”的左边必须指向类/结构/联合/泛型类型
+f:\vs2015\projects\threadpoollib-master\main.cpp(192): error C2027: 使用了未定义类型“DB_Help”
+  f:\vs2015\projects\threadpoollib-master\db_help.cpp(12): note: 参见“DB_Help”的声明
+f:\vs2015\projects\threadpoollib-master\main.cpp(192): error C2227: “->sql_all”的左边必须指向类/结构/联合/泛型类型
+f:\vs2015\projects\threadpoollib-master\main.cpp(213): error C2027: 使用了未定义类型“DB_Help”
+  f:\vs2015\projects\threadpoollib-master\db_help.cpp(12): note: 参见“DB_Help”的声明
+f:\vs2015\projects\threadpoollib-master\main.cpp(213): error C2227: “->select_computer”的左边必须指向类/结构/联合/泛型类型
+f:\vs2015\projects\threadpoollib-master\main.cpp(224): error C2027: 使用了未定义类型“DB_Help”
+  f:\vs2015\projects\threadpoollib-master\db_help.cpp(12): note: 参见“DB_Help”的声明
+f:\vs2015\projects\threadpoollib-master\main.cpp(224): error C2227: “->select_history”的左边必须指向类/结构/联合/泛型类型
+f:\vs2015\projects\threadpoollib-master\main.cpp(241): error C2027: 使用了未定义类型“DB_Help”
+  f:\vs2015\projects\threadpoollib-master\db_help.cpp(12): note: 参见“DB_Help”的声明
+f:\vs2015\projects\threadpoollib-master\main.cpp(241): error C2227: “->select_forbidweb”的左边必须指向类/结构/联合/泛型类型
+f:\vs2015\projects\threadpoollib-master\main.cpp(257): error C2027: 使用了未定义类型“DB_Help”
+  f:\vs2015\projects\threadpoollib-master\db_help.cpp(12): note: 参见“DB_Help”的声明
+f:\vs2015\projects\threadpoollib-master\main.cpp(257): error C2227: “->login”的左边必须指向类/结构/联合/泛型类型
+f:\vs2015\projects\threadpoollib-master\main.cpp(264): error C2027: 使用了未定义类型“DB_Help”
+  f:\vs2015\projects\threadpoollib-master\db_help.cpp(12): note: 参见“DB_Help”的声明
+f:\vs2015\projects\threadpoollib-master\main.cpp(264): error C2227: “->delete_computer”的左边必须指向类/结构/联合/泛型类型
+f:\vs2015\projects\threadpoollib-master\main.cpp(273): error C2027: 使用了未定义类型“DB_Help”
+  f:\vs2015\projects\threadpoollib-master\db_help.cpp(12): note: 参见“DB_Help”的声明
+f:\vs2015\projects\threadpoollib-master\main.cpp(273): error C2227: “->delete_forbidweb”的左边必须指向类/结构/联合/泛型类型
+f:\vs2015\projects\threadpoollib-master\main.cpp(282): error C2027: 使用了未定义类型“DB_Help”
+  f:\vs2015\projects\threadpoollib-master\db_help.cpp(12): note: 参见“DB_Help”的声明
+f:\vs2015\projects\threadpoollib-master\main.cpp(282): error C2227: “->delete_senstive”的左边必须指向类/结构/联合/泛型类型
+f:\vs2015\projects\threadpoollib-master\main.cpp(290): error C2027: 使用了未定义类型“DB_Help”
+  f:\vs2015\projects\threadpoollib-master\db_help.cpp(12): note: 参见“DB_Help”的声明
+f:\vs2015\projects\threadpoollib-master\main.cpp(290): error C2227: “->delete_history”的左边必须指向类/结构/联合/泛型类型
+f:\vs2015\projects\threadpoollib-master\main.cpp(301): error C2027: 使用了未定义类型“DB_Help”
+  f:\vs2015\projects\threadpoollib-master\db_help.cpp(12): note: 参见“DB_Help”的声明
+f:\vs2015\projects\threadpoollib-master\main.cpp(301): error C2227: “->insert_forbidweb”的左边必须指向类/结构/联合/泛型类型
+f:\vs2015\projects\threadpoollib-master\main.cpp(312): error C2027: 使用了未定义类型“DB_Help”
+  f:\vs2015\projects\threadpoollib-master\db_help.cpp(12): note: 参见“DB_Help”的声明
+f:\vs2015\projects\threadpoollib-master\main.cpp(312): error C2227: “->insert_senstive”的左边必须指向类/结构/联合/泛型类型
+f:\vs2015\projects\threadpoollib-master\main.cpp(326): error C2027: 使用了未定义类型“DB_Help”
+  f:\vs2015\projects\threadpoollib-master\db_help.cpp(12): note: 参见“DB_Help”的声明
+f:\vs2015\projects\threadpoollib-master\main.cpp(326): error C2227: “->insert_computer”的左边必须指向类/结构/联合/泛型类型
+f:\vs2015\projects\threadpoollib-master\main.cpp(338): error C2027: 使用了未定义类型“DB_Help”
+  f:\vs2015\projects\threadpoollib-master\db_help.cpp(12): note: 参见“DB_Help”的声明
+f:\vs2015\projects\threadpoollib-master\main.cpp(338): error C2227: “->insert_customer”的左边必须指向类/结构/联合/泛型类型
+f:\vs2015\projects\threadpoollib-master\main.cpp(350): error C2027: 使用了未定义类型“DB_Help”
+  f:\vs2015\projects\threadpoollib-master\db_help.cpp(12): note: 参见“DB_Help”的声明
+f:\vs2015\projects\threadpoollib-master\main.cpp(350): error C2227: “->insert_history”的左边必须指向类/结构/联合/泛型类型
+f:\vs2015\projects\threadpoollib-master\main.cpp(363): error C2027: 使用了未定义类型“DB_Help”
+  f:\vs2015\projects\threadpoollib-master\db_help.cpp(12): note: 参见“DB_Help”的声明
+f:\vs2015\projects\threadpoollib-master\main.cpp(363): error C2227: “->update_computer”的左边必须指向类/结构/联合/泛型类型
+  TestTask.cpp
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(92): warning C4244: “=”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(111): warning C4800: “char *”: 将值强制为布尔值“true”或“false”(性能警告)
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(86): warning C4101: “i”: 未引用的局部变量
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(166): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(174): warning C4800: “char *”: 将值强制为布尔值“true”或“false”(性能警告)
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(201): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(244): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(239): warning C4101: “res1”: 未引用的局部变量
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(286): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(364): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(384): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(409): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(429): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(459): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(489): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(519): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(551): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+  MyThreadPool.cpp
+c:\program files (x86)\windows kits\8.1\include\shared\ws2def.h(100): warning C4005: “AF_IPX”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(452): note: 参见“AF_IPX”的前一个定义
+c:\program files (x86)\windows kits\8.1\include\shared\ws2def.h(140): warning C4005: “AF_MAX”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(471): note: 参见“AF_MAX”的前一个定义
+c:\program files (x86)\windows kits\8.1\include\shared\ws2def.h(177): warning C4005: “SO_DONTLINGER”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(394): note: 参见“SO_DONTLINGER”的前一个定义
+c:\program files (x86)\windows kits\8.1\include\shared\ws2def.h(221): error C2011: “sockaddr”:“struct”类型重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(1002): note: 参见“sockaddr”的声明
+c:\program files (x86)\windows kits\8.1\include\shared\ws2def.h(421): error C2059: 语法错误:“常量”
+c:\program files (x86)\windows kits\8.1\include\shared\ws2def.h(421): error C3805: “常量”: 意外标记，应输入“}”或者“,”
+c:\program files (x86)\windows kits\8.1\include\shared\ws2def.h(556): warning C4005: “IN_CLASSA”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(279): note: 参见“IN_CLASSA”的前一个定义
+c:\program files (x86)\windows kits\8.1\include\shared\ws2def.h(562): warning C4005: “IN_CLASSB”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(285): note: 参见“IN_CLASSB”的前一个定义
+c:\program files (x86)\windows kits\8.1\include\shared\ws2def.h(568): warning C4005: “IN_CLASSC”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(291): note: 参见“IN_CLASSC”的前一个定义
+c:\program files (x86)\windows kits\8.1\include\shared\ws2def.h(579): warning C4005: “INADDR_ANY”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(296): note: 参见“INADDR_ANY”的前一个定义
+c:\program files (x86)\windows kits\8.1\include\shared\ws2def.h(581): warning C4005: “INADDR_BROADCAST”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(298): note: 参见“INADDR_BROADCAST”的前一个定义
+c:\program files (x86)\windows kits\8.1\include\shared\ws2def.h(615): error C2011: “sockaddr_in”:“struct”类型重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(1006): note: 参见“sockaddr_in”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(136): error C2011: “fd_set”:“struct”类型重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(1014): note: 参见“fd_set”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(156): warning C4005: “FD_CLR”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(89): note: 参见“FD_CLR”的前一个定义
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(171): warning C4005: “FD_SET”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(94): note: 参见“FD_SET”的前一个定义
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(180): error C2011: “timeval”:“struct”类型重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(1030): note: 参见“timeval”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(236): error C2011: “hostent”:“struct”类型重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(1018): note: 参见“hostent”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(249): error C2011: “netent”:“struct”类型重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(172): note: 参见“netent”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(256): error C2011: “servent”:“struct”类型重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(1022): note: 参见“servent”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(268): error C2011: “protoent”:“struct”类型重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(1026): note: 参见“protoent”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(364): error C2011: “WSAData”:“struct”类型重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(314): note: 参见“WSAData”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(462): error C2011: “sockproto”:“struct”类型重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(486): note: 参见“sockproto”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(504): error C2011: “linger”:“struct”类型重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(1010): note: 参见“linger”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(517): warning C4005: “SOMAXCONN”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(536): note: 参见“SOMAXCONN”的前一个定义
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(551): warning C4005: “FD_READ”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(554): note: 参见“FD_READ”的前一个定义
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(554): warning C4005: “FD_WRITE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(555): note: 参见“FD_WRITE”的前一个定义
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(557): warning C4005: “FD_OOB”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(556): note: 参见“FD_OOB”的前一个定义
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(560): warning C4005: “FD_ACCEPT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(557): note: 参见“FD_ACCEPT”的前一个定义
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(563): warning C4005: “FD_CONNECT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(558): note: 参见“FD_CONNECT”的前一个定义
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(566): warning C4005: “FD_CLOSE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(559): note: 参见“FD_CLOSE”的前一个定义
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1650): error C2375: “accept”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(734): note: 参见“accept”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1672): error C2375: “bind”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(739): note: 参见“bind”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1691): error C2375: “closesocket”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(744): note: 参见“closesocket”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1710): error C2375: “connect”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(746): note: 参见“connect”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1731): error C2375: “ioctlsocket”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(751): note: 参见“ioctlsocket”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1752): error C2375: “getpeername”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(756): note: 参见“getpeername”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1773): error C2375: “getsockname”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(761): note: 参见“getsockname”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1796): error C2375: “getsockopt”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(766): note: 参见“getsockopt”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1817): error C2375: “htonl”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(773): note: 参见“htonl”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1834): error C2375: “htons”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(775): note: 参见“htons”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1852): error C2375: “inet_addr”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(777): note: 参见“inet_addr”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1870): error C2375: “inet_ntoa”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(779): note: 参见“inet_ntoa”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1971): error C2375: “listen”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(781): note: 参见“listen”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1989): error C2375: “ntohl”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(785): note: 参见“ntohl”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2006): error C2375: “ntohs”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(787): note: 参见“ntohs”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2026): error C2375: “recv”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(789): note: 参见“recv”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2051): error C2375: “recvfrom”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(795): note: 参见“recvfrom”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2077): error C2375: “select”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(803): note: 参见“select”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2101): error C2375: “send”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(810): note: 参见“send”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2126): error C2375: “sendto”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(816): note: 参见“sendto”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2152): error C2375: “setsockopt”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(824): note: 参见“setsockopt”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2174): error C2375: “shutdown”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(831): note: 参见“shutdown”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2195): error C2375: “socket”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(835): note: 参见“socket”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2220): error C2375: “gethostbyaddr”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(842): note: 参见“gethostbyaddr”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2240): error C2375: “gethostbyname”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(847): note: 参见“gethostbyname”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2258): error C2375: “gethostname”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(849): note: 参见“gethostname”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2298): error C2375: “getservbyport”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(853): note: 参见“getservbyport”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2317): error C2375: “getservbyname”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(857): note: 参见“getservbyname”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2335): error C2375: “getprotobynumber”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(861): note: 参见“getprotobynumber”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2352): error C2375: “getprotobyname”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(863): note: 参见“getprotobyname”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2373): error C2375: “WSAStartup”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(867): note: 参见“WSAStartup”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2392): error C2375: “WSACleanup”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(871): note: 参见“WSACleanup”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2409): error C2375: “WSASetLastError”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(873): note: 参见“WSASetLastError”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2426): error C2375: “WSAGetLastError”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(875): note: 参见“WSAGetLastError”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2447): error C2375: “WSAIsBlocking”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(877): note: 参见“WSAIsBlocking”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2465): error C2375: “WSAUnhookBlockingHook”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(879): note: 参见“WSAUnhookBlockingHook”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2483): error C2375: “WSASetBlockingHook”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(881): note: 参见“WSASetBlockingHook”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2501): error C2375: “WSACancelBlockingCall”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(883): note: 参见“WSACancelBlockingCall”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2524): error C2375: “WSAAsyncGetServByName”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(885): note: 参见“WSAAsyncGetServByName”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2552): error C2375: “WSAAsyncGetServByPort”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(893): note: 参见“WSAAsyncGetServByPort”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2579): error C2375: “WSAAsyncGetProtoByName”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(901): note: 参见“WSAAsyncGetProtoByName”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2605): error C2375: “WSAAsyncGetProtoByNumber”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(908): note: 参见“WSAAsyncGetProtoByNumber”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2631): error C2375: “WSAAsyncGetHostByName”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(915): note: 参见“WSAAsyncGetHostByName”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2659): error C2375: “WSAAsyncGetHostByAddr”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(922): note: 参见“WSAAsyncGetHostByAddr”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2683): error C2375: “WSACancelAsyncRequest”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(931): note: 参见“WSACancelAsyncRequest”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2704): error C2375: “WSAAsyncSelect”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(933): note: 参见“WSAAsyncSelect”的声明
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(92): warning C4244: “=”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(111): warning C4800: “char *”: 将值强制为布尔值“true”或“false”(性能警告)
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(166): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(174): warning C4800: “char *”: 将值强制为布尔值“true”或“false”(性能警告)
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(201): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(244): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(286): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(364): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(384): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(409): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(429): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(459): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(489): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(519): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(551): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+  MyThread.cpp
+c:\program files (x86)\windows kits\8.1\include\shared\ws2def.h(100): warning C4005: “AF_IPX”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(452): note: 参见“AF_IPX”的前一个定义
+c:\program files (x86)\windows kits\8.1\include\shared\ws2def.h(140): warning C4005: “AF_MAX”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(471): note: 参见“AF_MAX”的前一个定义
+c:\program files (x86)\windows kits\8.1\include\shared\ws2def.h(177): warning C4005: “SO_DONTLINGER”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(394): note: 参见“SO_DONTLINGER”的前一个定义
+c:\program files (x86)\windows kits\8.1\include\shared\ws2def.h(221): error C2011: “sockaddr”:“struct”类型重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(1002): note: 参见“sockaddr”的声明
+c:\program files (x86)\windows kits\8.1\include\shared\ws2def.h(421): error C2059: 语法错误:“常量”
+c:\program files (x86)\windows kits\8.1\include\shared\ws2def.h(421): error C3805: “常量”: 意外标记，应输入“}”或者“,”
+c:\program files (x86)\windows kits\8.1\include\shared\ws2def.h(556): warning C4005: “IN_CLASSA”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(279): note: 参见“IN_CLASSA”的前一个定义
+c:\program files (x86)\windows kits\8.1\include\shared\ws2def.h(562): warning C4005: “IN_CLASSB”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(285): note: 参见“IN_CLASSB”的前一个定义
+c:\program files (x86)\windows kits\8.1\include\shared\ws2def.h(568): warning C4005: “IN_CLASSC”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(291): note: 参见“IN_CLASSC”的前一个定义
+c:\program files (x86)\windows kits\8.1\include\shared\ws2def.h(579): warning C4005: “INADDR_ANY”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(296): note: 参见“INADDR_ANY”的前一个定义
+c:\program files (x86)\windows kits\8.1\include\shared\ws2def.h(581): warning C4005: “INADDR_BROADCAST”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(298): note: 参见“INADDR_BROADCAST”的前一个定义
+c:\program files (x86)\windows kits\8.1\include\shared\ws2def.h(615): error C2011: “sockaddr_in”:“struct”类型重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(1006): note: 参见“sockaddr_in”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(136): error C2011: “fd_set”:“struct”类型重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(1014): note: 参见“fd_set”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(156): warning C4005: “FD_CLR”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(89): note: 参见“FD_CLR”的前一个定义
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(171): warning C4005: “FD_SET”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(94): note: 参见“FD_SET”的前一个定义
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(180): error C2011: “timeval”:“struct”类型重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(1030): note: 参见“timeval”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(236): error C2011: “hostent”:“struct”类型重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(1018): note: 参见“hostent”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(249): error C2011: “netent”:“struct”类型重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(172): note: 参见“netent”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(256): error C2011: “servent”:“struct”类型重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(1022): note: 参见“servent”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(268): error C2011: “protoent”:“struct”类型重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(1026): note: 参见“protoent”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(364): error C2011: “WSAData”:“struct”类型重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(314): note: 参见“WSAData”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(462): error C2011: “sockproto”:“struct”类型重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(486): note: 参见“sockproto”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(504): error C2011: “linger”:“struct”类型重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(1010): note: 参见“linger”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(517): warning C4005: “SOMAXCONN”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(536): note: 参见“SOMAXCONN”的前一个定义
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(551): warning C4005: “FD_READ”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(554): note: 参见“FD_READ”的前一个定义
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(554): warning C4005: “FD_WRITE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(555): note: 参见“FD_WRITE”的前一个定义
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(557): warning C4005: “FD_OOB”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(556): note: 参见“FD_OOB”的前一个定义
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(560): warning C4005: “FD_ACCEPT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(557): note: 参见“FD_ACCEPT”的前一个定义
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(563): warning C4005: “FD_CONNECT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(558): note: 参见“FD_CONNECT”的前一个定义
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(566): warning C4005: “FD_CLOSE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(559): note: 参见“FD_CLOSE”的前一个定义
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1650): error C2375: “accept”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(734): note: 参见“accept”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1672): error C2375: “bind”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(739): note: 参见“bind”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1691): error C2375: “closesocket”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(744): note: 参见“closesocket”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1710): error C2375: “connect”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(746): note: 参见“connect”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1731): error C2375: “ioctlsocket”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(751): note: 参见“ioctlsocket”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1752): error C2375: “getpeername”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(756): note: 参见“getpeername”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1773): error C2375: “getsockname”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(761): note: 参见“getsockname”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1796): error C2375: “getsockopt”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(766): note: 参见“getsockopt”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1817): error C2375: “htonl”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(773): note: 参见“htonl”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1834): error C2375: “htons”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(775): note: 参见“htons”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1852): error C2375: “inet_addr”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(777): note: 参见“inet_addr”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1870): error C2375: “inet_ntoa”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(779): note: 参见“inet_ntoa”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1971): error C2375: “listen”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(781): note: 参见“listen”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1989): error C2375: “ntohl”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(785): note: 参见“ntohl”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2006): error C2375: “ntohs”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(787): note: 参见“ntohs”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2026): error C2375: “recv”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(789): note: 参见“recv”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2051): error C2375: “recvfrom”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(795): note: 参见“recvfrom”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2077): error C2375: “select”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(803): note: 参见“select”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2101): error C2375: “send”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(810): note: 参见“send”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2126): error C2375: “sendto”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(816): note: 参见“sendto”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2152): error C2375: “setsockopt”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(824): note: 参见“setsockopt”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2174): error C2375: “shutdown”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(831): note: 参见“shutdown”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2195): error C2375: “socket”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(835): note: 参见“socket”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2220): error C2375: “gethostbyaddr”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(842): note: 参见“gethostbyaddr”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2240): error C2375: “gethostbyname”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(847): note: 参见“gethostbyname”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2258): error C2375: “gethostname”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(849): note: 参见“gethostname”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2298): error C2375: “getservbyport”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(853): note: 参见“getservbyport”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2317): error C2375: “getservbyname”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(857): note: 参见“getservbyname”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2335): error C2375: “getprotobynumber”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(861): note: 参见“getprotobynumber”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2352): error C2375: “getprotobyname”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(863): note: 参见“getprotobyname”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2373): error C2375: “WSAStartup”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(867): note: 参见“WSAStartup”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2392): error C2375: “WSACleanup”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(871): note: 参见“WSACleanup”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2409): error C2375: “WSASetLastError”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(873): note: 参见“WSASetLastError”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2426): error C2375: “WSAGetLastError”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(875): note: 参见“WSAGetLastError”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2447): error C2375: “WSAIsBlocking”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(877): note: 参见“WSAIsBlocking”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2465): error C2375: “WSAUnhookBlockingHook”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(879): note: 参见“WSAUnhookBlockingHook”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2483): error C2375: “WSASetBlockingHook”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(881): note: 参见“WSASetBlockingHook”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2501): error C2375: “WSACancelBlockingCall”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(883): note: 参见“WSACancelBlockingCall”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2524): error C2375: “WSAAsyncGetServByName”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(885): note: 参见“WSAAsyncGetServByName”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2552): error C2375: “WSAAsyncGetServByPort”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(893): note: 参见“WSAAsyncGetServByPort”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2579): error C2375: “WSAAsyncGetProtoByName”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(901): note: 参见“WSAAsyncGetProtoByName”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2605): error C2375: “WSAAsyncGetProtoByNumber”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(908): note: 参见“WSAAsyncGetProtoByNumber”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2631): error C2375: “WSAAsyncGetHostByName”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(915): note: 参见“WSAAsyncGetHostByName”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2659): error C2375: “WSAAsyncGetHostByAddr”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(922): note: 参见“WSAAsyncGetHostByAddr”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2683): error C2375: “WSACancelAsyncRequest”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(931): note: 参见“WSACancelAsyncRequest”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2704): error C2375: “WSAAsyncSelect”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(933): note: 参见“WSAAsyncSelect”的声明
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(92): warning C4244: “=”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(111): warning C4800: “char *”: 将值强制为布尔值“true”或“false”(性能警告)
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(166): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(174): warning C4800: “char *”: 将值强制为布尔值“true”或“false”(性能警告)
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(201): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(244): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(286): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(364): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(384): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(409): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(429): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(459): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(489): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(519): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(551): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+  MyQueue.cpp
+c:\program files (x86)\windows kits\8.1\include\shared\ws2def.h(100): warning C4005: “AF_IPX”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(452): note: 参见“AF_IPX”的前一个定义
+c:\program files (x86)\windows kits\8.1\include\shared\ws2def.h(140): warning C4005: “AF_MAX”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(471): note: 参见“AF_MAX”的前一个定义
+c:\program files (x86)\windows kits\8.1\include\shared\ws2def.h(177): warning C4005: “SO_DONTLINGER”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(394): note: 参见“SO_DONTLINGER”的前一个定义
+c:\program files (x86)\windows kits\8.1\include\shared\ws2def.h(221): error C2011: “sockaddr”:“struct”类型重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(1002): note: 参见“sockaddr”的声明
+c:\program files (x86)\windows kits\8.1\include\shared\ws2def.h(421): error C2059: 语法错误:“常量”
+c:\program files (x86)\windows kits\8.1\include\shared\ws2def.h(421): error C3805: “常量”: 意外标记，应输入“}”或者“,”
+c:\program files (x86)\windows kits\8.1\include\shared\ws2def.h(556): warning C4005: “IN_CLASSA”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(279): note: 参见“IN_CLASSA”的前一个定义
+c:\program files (x86)\windows kits\8.1\include\shared\ws2def.h(562): warning C4005: “IN_CLASSB”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(285): note: 参见“IN_CLASSB”的前一个定义
+c:\program files (x86)\windows kits\8.1\include\shared\ws2def.h(568): warning C4005: “IN_CLASSC”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(291): note: 参见“IN_CLASSC”的前一个定义
+c:\program files (x86)\windows kits\8.1\include\shared\ws2def.h(579): warning C4005: “INADDR_ANY”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(296): note: 参见“INADDR_ANY”的前一个定义
+c:\program files (x86)\windows kits\8.1\include\shared\ws2def.h(581): warning C4005: “INADDR_BROADCAST”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(298): note: 参见“INADDR_BROADCAST”的前一个定义
+c:\program files (x86)\windows kits\8.1\include\shared\ws2def.h(615): error C2011: “sockaddr_in”:“struct”类型重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(1006): note: 参见“sockaddr_in”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(136): error C2011: “fd_set”:“struct”类型重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(1014): note: 参见“fd_set”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(156): warning C4005: “FD_CLR”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(89): note: 参见“FD_CLR”的前一个定义
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(171): warning C4005: “FD_SET”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(94): note: 参见“FD_SET”的前一个定义
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(180): error C2011: “timeval”:“struct”类型重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(1030): note: 参见“timeval”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(236): error C2011: “hostent”:“struct”类型重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(1018): note: 参见“hostent”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(249): error C2011: “netent”:“struct”类型重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(172): note: 参见“netent”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(256): error C2011: “servent”:“struct”类型重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(1022): note: 参见“servent”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(268): error C2011: “protoent”:“struct”类型重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(1026): note: 参见“protoent”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(364): error C2011: “WSAData”:“struct”类型重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(314): note: 参见“WSAData”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(462): error C2011: “sockproto”:“struct”类型重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(486): note: 参见“sockproto”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(504): error C2011: “linger”:“struct”类型重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(1010): note: 参见“linger”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(517): warning C4005: “SOMAXCONN”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(536): note: 参见“SOMAXCONN”的前一个定义
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(551): warning C4005: “FD_READ”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(554): note: 参见“FD_READ”的前一个定义
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(554): warning C4005: “FD_WRITE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(555): note: 参见“FD_WRITE”的前一个定义
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(557): warning C4005: “FD_OOB”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(556): note: 参见“FD_OOB”的前一个定义
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(560): warning C4005: “FD_ACCEPT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(557): note: 参见“FD_ACCEPT”的前一个定义
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(563): warning C4005: “FD_CONNECT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(558): note: 参见“FD_CONNECT”的前一个定义
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(566): warning C4005: “FD_CLOSE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(559): note: 参见“FD_CLOSE”的前一个定义
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1650): error C2375: “accept”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(734): note: 参见“accept”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1672): error C2375: “bind”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(739): note: 参见“bind”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1691): error C2375: “closesocket”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(744): note: 参见“closesocket”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1710): error C2375: “connect”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(746): note: 参见“connect”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1731): error C2375: “ioctlsocket”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(751): note: 参见“ioctlsocket”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1752): error C2375: “getpeername”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(756): note: 参见“getpeername”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1773): error C2375: “getsockname”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(761): note: 参见“getsockname”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1796): error C2375: “getsockopt”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(766): note: 参见“getsockopt”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1817): error C2375: “htonl”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(773): note: 参见“htonl”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1834): error C2375: “htons”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(775): note: 参见“htons”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1852): error C2375: “inet_addr”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(777): note: 参见“inet_addr”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1870): error C2375: “inet_ntoa”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(779): note: 参见“inet_ntoa”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1971): error C2375: “listen”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(781): note: 参见“listen”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1989): error C2375: “ntohl”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(785): note: 参见“ntohl”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2006): error C2375: “ntohs”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(787): note: 参见“ntohs”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2026): error C2375: “recv”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(789): note: 参见“recv”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2051): error C2375: “recvfrom”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(795): note: 参见“recvfrom”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2077): error C2375: “select”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(803): note: 参见“select”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2101): error C2375: “send”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(810): note: 参见“send”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2126): error C2375: “sendto”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(816): note: 参见“sendto”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2152): error C2375: “setsockopt”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(824): note: 参见“setsockopt”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2174): error C2375: “shutdown”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(831): note: 参见“shutdown”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2195): error C2375: “socket”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(835): note: 参见“socket”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2220): error C2375: “gethostbyaddr”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(842): note: 参见“gethostbyaddr”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2240): error C2375: “gethostbyname”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(847): note: 参见“gethostbyname”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2258): error C2375: “gethostname”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(849): note: 参见“gethostname”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2298): error C2375: “getservbyport”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(853): note: 参见“getservbyport”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2317): error C2375: “getservbyname”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(857): note: 参见“getservbyname”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2335): error C2375: “getprotobynumber”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(861): note: 参见“getprotobynumber”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2352): error C2375: “getprotobyname”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(863): note: 参见“getprotobyname”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2373): error C2375: “WSAStartup”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(867): note: 参见“WSAStartup”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2392): error C2375: “WSACleanup”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(871): note: 参见“WSACleanup”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2409): error C2375: “WSASetLastError”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(873): note: 参见“WSASetLastError”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2426): error C2375: “WSAGetLastError”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(875): note: 参见“WSAGetLastError”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2447): error C2375: “WSAIsBlocking”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(877): note: 参见“WSAIsBlocking”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2465): error C2375: “WSAUnhookBlockingHook”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(879): note: 参见“WSAUnhookBlockingHook”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2483): error C2375: “WSASetBlockingHook”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(881): note: 参见“WSASetBlockingHook”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2501): error C2375: “WSACancelBlockingCall”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(883): note: 参见“WSACancelBlockingCall”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2524): error C2375: “WSAAsyncGetServByName”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(885): note: 参见“WSAAsyncGetServByName”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2552): error C2375: “WSAAsyncGetServByPort”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(893): note: 参见“WSAAsyncGetServByPort”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2579): error C2375: “WSAAsyncGetProtoByName”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(901): note: 参见“WSAAsyncGetProtoByName”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2605): error C2375: “WSAAsyncGetProtoByNumber”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(908): note: 参见“WSAAsyncGetProtoByNumber”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2631): error C2375: “WSAAsyncGetHostByName”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(915): note: 参见“WSAAsyncGetHostByName”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2659): error C2375: “WSAAsyncGetHostByAddr”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(922): note: 参见“WSAAsyncGetHostByAddr”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2683): error C2375: “WSACancelAsyncRequest”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(931): note: 参见“WSACancelAsyncRequest”的声明
+c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2704): error C2375: “WSAAsyncSelect”: 重定义；不同的链接
+  c:\program files (x86)\windows kits\8.1\include\um\winsock.h(933): note: 参见“WSAAsyncSelect”的声明
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(92): warning C4244: “=”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(111): warning C4800: “char *”: 将值强制为布尔值“true”或“false”(性能警告)
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(166): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(174): warning C4800: “char *”: 将值强制为布尔值“true”或“false”(性能警告)
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(201): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(244): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(286): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(364): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(384): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(409): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(429): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(459): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(489): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(519): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\threadpoollib-master\db_help.cpp(551): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+  正在生成代码...

@@ -112,8 +112,8 @@ int main()
 	int len = sizeof(SOCKADDR);
 	while (1)
 	{
-		SOCKET serConn = accept(serSocket, (SOCKADDR*)&clientsocket, &len);//如果这里不是accept而是conection的话。。就会不断的监听
-
+		SOCKET serConn = accept(serSocket, (SOCKADDR*)&clientsocket, &len);
+		//SOCKET serConn = connect(serSocket, (SOCKADDR*)&clientsocket, len);
 		//SendFile(serConn, "hello.JPG");
 		//char sendBuf[50];
 		//sprintf(sendBuf, "Welcome %s to here!", inet_ntoa(clientsocket.sin_addr));
@@ -178,15 +178,15 @@ int main()
 		case 'a':                     //待检测
 			//查询某表全部信息
 			k = (int)(recvBuff[1]-'0');
-			cout << "k=" << k << endl;
-			cout << "j=" << j << endl;
+			cout << "表：" << k << endl;
 			switch (k)
 			{
 			case COMPUTER_TABLE:
-				co = (Computer*)db_help->sql_all(k);
-				j = co[0].num;
-				cout << "j=" << j << endl;
-				_itoa(j, sendBuff, 10);
+				co = (Computer*)db_help->sql_all(&k);  //引用参数 返回数组大小
+				//j = co[0].num;
+				j = k;
+				cout << "数量j：" << j << endl;
+				_itoa(j, sendBuff, 10);//int 转 char*
 				send(serConn, sendBuff, sizeof(sendBuff) + 1, NULL);
 				if (j != 0) {
 					for (i = 0; i < j; i++) {
@@ -201,8 +201,9 @@ int main()
 				}
 				break; 
 			case SENSTIVE_TABLE:
-				se = (Senstive*)db_help->sql_all(k);
-				j = se[0].num;
+				se = (Senstive*)db_help->sql_all(&k);
+				//j = se[0].num;
+				j = k;
 				cout << "j=" << j << endl;
 				_itoa(j, sendBuff, 10);
 				send(serConn, sendBuff, sizeof(sendBuff) + 1, NULL);
@@ -217,8 +218,9 @@ int main()
 				}
 				break;
 			case FORBIDWEB_TABLE:
-				fo = (Forbidweb*)db_help->sql_all(k);
-				j = fo[0].num;
+				fo = (Forbidweb*)db_help->sql_all(&k);
+				//j = fo[0].num;
+				j = k;
 				cout << "j=" << j << endl;
 				_itoa(j, sendBuff, 10);
 				send(serConn, sendBuff, sizeof(sendBuff) + 1, NULL);
@@ -233,8 +235,9 @@ int main()
 				}
 				break;
 			case HISTORY_TABLE:
-				hi = (History*)db_help->sql_all(k);
-				j = hi[0].num;
+				hi = (History*)db_help->sql_all(&k);
+				//j = hi[0].num;
+				j = k;
 				cout << "j=" << j << endl;
 				_itoa(j, sendBuff, 10);
 				send(serConn, sendBuff, sizeof(sendBuff) + 1, NULL);
@@ -262,28 +265,46 @@ int main()
 			memcpy(sendBuff, &com1, sizeof(com1));
 			send(serConn, sendBuff, sizeof(sendBuff) + 1, NULL);
 			break;
-		case 'c':                     //待检测
+		case 'c':
 			//通过ip查询某电脑历史记录 
 			hi = db_help->select_history(buff);
-			cout << "hi:" << hi[0].ip << "	" << hi[0].address << endl;
-			memcpy(sendBuff, &hi, sizeof(hi));
-			send(serConn, sendBuff, sizeof(sendBuff) + 1, NULL);
+			k = atoi(buff);
+			cout << "k=" << k << endl;
+			_itoa(k, sendBuff, 10);
+			send(serConn, sendBuff, sizeof(sendBuff) + 1, NULL);//发送数组大小
+			for (int i = 0; i < k; i++)
+			{
+				cout << "hi:" << hi[i].ip << "	" << hi[i].address << endl;
+				memcpy(his1.ip, hi[i].ip.c_str(), sizeof(hi[i].ip));     //his转his1
+				memcpy(his1.address, hi[i].address.c_str(), sizeof(hi[i].address));
+				memcpy(his1.time, hi[i].time.c_str(), sizeof(hi[i].time));
+				memcpy(sendBuff, &his1, sizeof(his1));
+				send(serConn, sendBuff, sizeof(sendBuff) + 1, NULL);
+			}
 			break;
-		case 'd':                     //待检测
+		case 'd':                 
 			//通过ip查询某电脑禁止访问网址 
 			fo = db_help->select_forbidweb(buff);
-			cout << "fo" << fo[0].ip << "	" << fo[0].web << endl;
-			cout << "fo" << fo[1].ip << "	" << fo[1].web << endl;
-			cout << "fo" << fo[2].ip << "	" << fo[2].web << endl;
-			memcpy(sendBuff, &fo, sizeof(fo));
-			send(serConn, sendBuff, sizeof(sendBuff) + 1, NULL);
+			k = atoi(buff);
+			_itoa(k, sendBuff, 10);
+			send(serConn, sendBuff, sizeof(sendBuff) + 1, NULL);//发送数组大小
+			for (int i = 0; i < k; i++)
+			{
+				cout << "fo" << fo[i].ip << "	" << fo[i].web << endl;
+				memcpy(fob1.ip, fo[i].ip.c_str(), sizeof(fo[i].ip));
+				memcpy(fob1.web, fo[i].web.c_str(), sizeof(fo[i].web));
+				memcpy(sendBuff, &fob1, sizeof(fob1));
+				send(serConn, sendBuff, sizeof(sendBuff) + 1, NULL);
+			}
 			break;
 		case 'e':
 			//查询登录用户
 			cus1 = *(Customer1*)buff;                        //接受的Customer1
-			cus = db_help->login(cus1.name, cus1.password);	 //返回的Customer
-			cout << "cus:" << cus.name << "	" << cus.password << "	" << cus.email << endl;
-			memcpy(sendBuff, &cus, sizeof(cus));
+			b = db_help->login(cus1.name, cus1.password);	 //返回的bool
+			//cout << "cus:" << cus.name << "	" << cus.password << "	" << cus.email << endl;
+			//memcpy(sendBuff, &cus, sizeof(cus));
+			if (b) { memcpy(sendBuff, "1", sizeof("1")); }
+			else { memcpy(sendBuff, "0", sizeof("0")); } 
 			send(serConn, sendBuff, sizeof(sendBuff) + 1, NULL);
 			break;
 		case 'f':
@@ -439,10 +460,11 @@ int main()
 
 
 		closesocket(serConn);//关闭
-		closesocket(serSocket);//关闭
+		//closesocket(serSocket);//关闭
 		
-		WSACleanup();//释放资源的操作
-		return 0;
+		//WSACleanup();//释放资源的操作
+		//system("pause");
+		//return 0;
 	}
 	return 1;
 }
