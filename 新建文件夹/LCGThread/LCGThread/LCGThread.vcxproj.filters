@@ -42,16 +42,13 @@
     <ClInclude Include="MyThreadPool.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="struct.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
     <ClInclude Include="Task.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="TestTask.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="struct.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="TEST.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -80,16 +77,13 @@
     <ClCompile Include="MyThreadPool.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="db_help.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
     <ClCompile Include="Task.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="TestTask.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="db_help.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="TEST.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

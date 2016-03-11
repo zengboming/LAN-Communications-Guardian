@@ -83,7 +83,7 @@ class DB_Help {
 				result = mysql_store_result(mysql);
 				if (result) {
 					
-					int i, j,x=0;
+					int j,x=0;
 					/*
 					for (i = 0; fd = mysql_fetch_field(result); i++) {//获得列名
 						strcpy_s(column[i], fd->name);
@@ -108,10 +108,13 @@ class DB_Help {
 							case COMPUTER_TABLE:
 								//com[x].num = j;
 								com[x].ip = row[0];
-								com[x].online = row[1];
+								com[x].up_speed = atof(row[3]);
+								com[x].down_speed = atof(row[4]);
+								com[x].online = atoi(row[1]);//如果不转成int 直接赋值的话，bool永远为1.
+								//com[x].online = row[1];
+								//cout << "row:" << row[1] << endl;
+								//cout << "online:" << com[x].online << endl;
 								break;
-								//case CUSTOMER_TABLE:
-								//	break;
 							case SENSTIVE_TABLE:
 								//sen[x].num = j;
 								sen[x].ip = row[2];
@@ -155,7 +158,7 @@ class DB_Help {
 		//通过ip查询计算机信息
 		struct Computer select_computer(char *ip) {
 			char *sql = (char*)malloc(100);
-			sprintf_s(sql,100, "select online from computer where ip = '%s'", ip);
+			sprintf_s(sql,100, "select onl from computer where ip = '%s'", ip);
 			mysql_query(mysql, "SET NAMES GBK");//设置编码格式
 			int res;
 			res = mysql_query(mysql, sql);
@@ -169,10 +172,8 @@ class DB_Help {
 						computer.online = 0;
 						return computer;
 					}
-					//cout << row[0] << "	" << row[1] << "	"<<row[2]<<endl;
 					computer.ip = ip;
 					computer.online = row[0];
-					//cout << computer.up_speed << "	"<< computer.online <<endl;
 					return computer;
 				}
 				else { 
@@ -236,7 +237,7 @@ class DB_Help {
 			char *sql = (char*)malloc(100);
 			sprintf_s(sql, 100, "select ip,web from forbidweb where ip = '0.0.0.0' or ip = '%s'",ip);
 			mysql_query(mysql, "SET NAMES GBK");//设置编码格式
-			int res,res1;
+			int res;
 			res = mysql_query(mysql, sql);
 			if (!res) {
 				result = mysql_store_result(mysql);
@@ -297,45 +298,11 @@ class DB_Help {
 				return 0;
 			}
 		}
-		/*struct Customer login(char* name,char* password) {
-			char *sql = (char*)malloc(100);
-			sprintf_s(sql, 100, "select email from customer where name='%s' and password='%s'", name,password);
-			mysql_query(mysql, "SET NAMES GBK");//设置编码格式
-			int res;
-			res = mysql_query(mysql, sql);
-			if (!res) {
-				result = mysql_store_result(mysql);
-				if (result) {
-					row = mysql_fetch_row(result);
-					int i = mysql_num_rows(result);
-					if (i == 0) {
-						customer.name = "0";
-						return customer;
-					}
-					//cout << row[0] << "	" << row[1] << "	"<<row[2]<<endl;
-					customer.name = name;
-					customer.password = password;
-					customer.email = row[0];
-					//cout << computer.up_speed << "	"<< computer.online <<endl;
-					return customer;
-				}
-				else {
-					customer.name = "0";
-					return customer;
-				}
-			}
-			else {
-				customer.name = "0";
-				return customer;
-			}
-		}*/
 
 		//删除某一计算机
 		int delete_computer(char *ip) {
 			char *sql = (char*)malloc(100);
 			sprintf_s(sql, 100, "delete from computer where ip = '%s'", ip);
-			//char *sql = "select up_speed,down_speed,online from computer where ip='192.168.70.70'";
-			//cout << sql << endl;
 			mysql_query(mysql, "SET NAMES GBK");//设置编码格式
 			int res;
 			res = mysql_query(mysql, sql);
@@ -492,7 +459,7 @@ class DB_Help {
 					}
 				}
 			}
-			sprintf_s(sql, 100, "insert into computer (ip,online) values('%s','%d')", cp.ip.c_str(), cp.online);
+			sprintf_s(sql, 100, "insert into computer (ip,onl) values('%s','%d')", cp.ip.c_str(), cp.online);
 			//c_str()将string转为char*
 			mysql_query(mysql, "SET NAMES GBK");//设置编码格式
 			res = mysql_query(mysql, sql);
@@ -571,7 +538,26 @@ class DB_Help {
 		//修改电脑是否在线
 		int update_computer(Computer cp) {
 			char *sql = (char*)malloc(100);
-			sprintf_s(sql, 100, "update computer set online='%d' where ip='%s'",cp.online,cp.ip.c_str());
+			sprintf_s(sql, 100, "update computer set onl=%d where ip='%s'",cp.online,cp.ip.c_str());
+			cout << sql << endl;
+			mysql_query(mysql, "SET NAMES GBK");//设置编码格式
+			int res;
+			res = mysql_query(mysql, sql);
+			if (res) {
+				cout << "failed" << endl;
+				return 0;
+			}
+			else {
+				cout << "success!" << endl;
+				return 1;
+			}
+		}
+
+		//修改电脑上下行速度
+		int update_computer2(Computer cp) {
+			char *sql = (char*)malloc(100);
+			sprintf_s(sql, 100, "update computer set up_speed=%f, down_speed=%f where ip='%s'", cp.up_speed,cp.down_speed, cp.ip.c_str());
+			//sprintf_s(sql, 100, "update computer set up_speed=33.28, down_speed=19.99 where ip='192.168.80.80'");
 			cout << sql << endl;
 			mysql_query(mysql, "SET NAMES GBK");//设置编码格式
 			int res;

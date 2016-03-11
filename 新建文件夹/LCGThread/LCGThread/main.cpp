@@ -3,37 +3,85 @@
 #include <winsock2.h>
 #include <Windows.h>
 #include <fstream>
+#include "stdlib.h"
 #pragma comment( lib, "ws2_32.lib" )
 
 #include "MyThreadPool.h"
 #include "MyThread.h"
-#include "TEST.h"
 #include "TestTask.h"
 #include "db_help.cpp"
 #include "struct.h"
 using namespace std;
 
+CTestTask*p = NULL;
+CMyThreadPool threadpool(10);
+
+
+DWORD WINAPI startListen(LPVOID ipParam)
+{
+	SOCKET socket = *((SOCKET*)ipParam);
+
+	SOCKADDR_IN clientsocket;
+	int len = sizeof(SOCKADDR_IN);
+	char recvBuff[200];	//接受的字符串
+	memset(recvBuff, 0, 200);  
+	while (1)  
+	{ 
+		SOCKET serConn = accept(socket, (SOCKADDR*)&clientsocket, &len);
+
+		recv(serConn, recvBuff, sizeof(recvBuff), NULL);
+		for (int i = 0; i < sizeof(recvBuff); i++) { 
+			cout << recvBuff[i];
+		} 
+		cout << endl;  
+
+		int thread_id = 0;
+		p = new CTestTask(thread_id, recvBuff, serConn);
+		threadpool.addTask(p, PRIORITY::NORMAL);
+		Sleep(500);
+		cout << "get sendBuff:"<<p->sendBuff << endl;
+
+	
+		if(recvBuff[0]=='a'|| recvBuff[0] == 'c'|| recvBuff[0] == 'd')
+		{
+			char cnum[2];
+			cnum[0] = p->sendBuff[0];
+			cnum[1] = p->sendBuff[1];
+			int num = atoi(cnum);
+			cout << "数量:" << num << endl;
+
+			char send2[200];
+			memset(send2, 0, 200);
+			Senstive1 sent1;
+			memset(&sent1, 0x00, sizeof(Senstive1));
+
+			send(serConn, cnum, sizeof(cnum) + 1, NULL);//发送数量
+			cout << "发送数量:" << cnum << endl;
+			for (int i = 0; i < num; i++)
+			{
+				memcpy(send2, p->sendBuff + 2 + i * 200, 200);
+				send(serConn, send2, sizeof(send2) + 1, NULL);//发送数量
+				//cout << "发送内容:" ;
+				//sent1 = *(Senstive1*)send2;
+				//cout << "ip:" << sent1.ip << "word:" << sent1.word << endl;
+				//Sleep(100);
+			}
+		}
+		else 
+		{
+			send(serConn, p->sendBuff, 200, NULL);
+		}
+
+		cout << "-----------------------------------------------" << endl;
+		memset(recvBuff, 0, 200);
+		closesocket(serConn);
+	}
+	return 0;
+}
+
+
 int main(int argc,char**argv)
 {
-	
-	/*CTestTask*p=NULL;
-	CMyThreadPool threadpool(10);
-	for(int i=0;i<100;i++)
-	{
- 		p=new CTestTask(i);
-		threadpool.addTask(p,PRIORITY::NORMAL);
-	}
-	p=new CTestTask(102200);
-	threadpool.addTask(p,PRIORITY::HIGH);
-	//threadpool.destroyThreadPool();
-	//主线程执行其他工作。
-	{
-		Sleep(1000*1000);
-	}
-	return 0;*/
-
-	CTestTask*p = NULL;
-	CMyThreadPool threadpool(10);
 
 	WSADATA wsa;
 	//初始化socket资源
@@ -53,330 +101,9 @@ int main(int argc,char**argv)
 	bind(serSocket, (SOCKADDR*)&addr, sizeof(SOCKADDR));//绑定完成
 	listen(serSocket, 5);//其中第二个参数代表能够接收的最多的连接数
 
-	//////////////////////////////////////////////////////////////////////////
-	//开始进行监听
-	//////////////////////////////////////////////////////////////////////////
-	SOCKADDR_IN clientsocket;
-	int len = sizeof(SOCKADDR);
+	//HANDLE hThrd;
+	HANDLE listener = CreateThread(NULL,0,startListen,&serSocket,0,NULL);
+	while (1) {}
 
-	int thread_id = 0;
-
-	while (1)
-	{
-		SOCKET serConn = accept(serSocket, (SOCKADDR*)&clientsocket, &len);
-		
-		//接收的信息
-		char recvBuff[200];	//接受的字符串
-		/*char buff[199];		//由结构体强转的字符串
-		void *table;
-		int k;				//sql_all参数
-		int b;				//返回成功与否
-		char command;		//命令
-							//发送的信息
-		char sendBuff[200];
-		//数据库中使用的结构体
-		Customer  cus, *cu;
-		Computer  com, *co;
-		History   his, *hi;
-		Senstive  sen, *se;
-		Forbidweb fob, *fo;
-		//socket中使用的结构体
-		Customer1  cus1, *cu1;
-		Computer1  com1, *co1;
-		History1   his1, *hi1;
-		Senstive1  sen1, *se1;
-		Forbidweb1 fob1, *fo1;
-		//操作数据库的对象
-		DB_Help *db_help = new DB_Help();
-		*/
-		//初始化清空
-		memset(recvBuff, 0, 200);
-		//memset(buff, 0, 199);
-		//memset(sendBuff, 0, 200);
-
-		/*memset(&cus, 0x00, sizeof(Customer));
-		memset(&com, 0x00, sizeof(Computer));
-		memset(&his, 0x00, sizeof(History));
-		memset(&sen, 0x00, sizeof(Senstive));
-		memset(&fob, 0x00, sizeof(Forbidweb));
-
-		memset(&cus1, 0x00, sizeof(Customer1));
-		memset(&com1, 0x00, sizeof(Computer1));
-		memset(&his1, 0x00, sizeof(History1));
-		memset(&sen1, 0x00, sizeof(Senstive1));
-		memset(&fob1, 0x00, sizeof(Forbidweb1));*/
-
-
-		//接收并处理
-		recv(serConn, recvBuff, sizeof(recvBuff), NULL);
-		cout << "recvBuff:";
-		for (int i = 0; i < sizeof(recvBuff); i++) {
-			cout << recvBuff[i];
-		}
-		cout << endl;
-
-		p = new CTestTask(thread_id,recvBuff);
-		//TEST test(serConn);
-		threadpool.addTask(p, PRIORITY::NORMAL);
-
-		/*
-		command = recvBuff[0];
-		cout << "command:" << command << endl;
-		memcpy(buff, recvBuff + 1, sizeof(recvBuff) - 1);
-		//需要将struct中的char[]转成string
-		int j = 0;//数组大小
-		int i;
-		switch (command)
-		{
-		case 'a':
-		//查询某表全部信息
-			k = (int)(recvBuff[1] - '0');
-			cout << "表：" << k << endl;
-			switch (k)
-			{
-			case COMPUTER_TABLE:
-				co = (Computer*)db_help->sql_all(&k);  //引用参数 返回数组大小
-													   //j = co[0].num;
-				j = k;
-				cout << "数量j：" << j << endl;
-				_itoa(j, sendBuff, 10);//int 转 char*
-				send(serConn, sendBuff, sizeof(sendBuff) + 1, NULL);
-				if (j != 0) {
-					for (i = 0; i < j; i++) {
-						memcpy(com1.ip, co[i].ip.c_str(), sizeof(co[i].ip));//Computer转Computer1
-						com1.online = co[i].online;
-						com1.up_speed = co[i].up_speed;
-						com1.down_speed = co[i].down_speed;
-						memcpy(sendBuff, &com1, sizeof(com1));
-						send(serConn, sendBuff, sizeof(sendBuff) + 1, NULL);
-						cout << "sendbuff: " << sendBuff << endl;
-					}
-				}
-				break;
-			case SENSTIVE_TABLE:
-				se = (Senstive*)db_help->sql_all(&k);
-				//j = se[0].num;
-				j = k;
-				cout << "j=" << j << endl;
-				_itoa(j, sendBuff, 10);
-				send(serConn, sendBuff, sizeof(sendBuff) + 1, NULL);
-				if (j != 0) {
-					for (i = 0; i < j; i++) {
-						memcpy(sen1.ip, se[i].ip.c_str(), sizeof(se[i].ip));
-						memcpy(sen1.word, se[i].word.c_str(), sizeof(se[i].word));
-						memcpy(sendBuff, &sen1, sizeof(sen1));
-						send(serConn, sendBuff, sizeof(sendBuff) + 1, NULL);
-						cout << "sendbuff: " << sendBuff << endl;
-					}
-				}
-				break;
-			case FORBIDWEB_TABLE:
-				fo = (Forbidweb*)db_help->sql_all(&k);
-				//j = fo[0].num;
-				j = k;
-				cout << "j=" << j << endl;
-				_itoa(j, sendBuff, 10);
-				send(serConn, sendBuff, sizeof(sendBuff) + 1, NULL);
-				if (j != 0) {
-					for (i = 0; i < j; i++) {
-						memcpy(fob1.ip, fo[i].ip.c_str(), sizeof(fo[i].ip));
-						memcpy(fob1.web, fo[i].web.c_str(), sizeof(fo[i].web));
-						memcpy(sendBuff, &fob1, sizeof(fob1));
-						send(serConn, sendBuff, sizeof(sendBuff) + 1, NULL);
-						cout << "sendbuff: " << sendBuff << endl;
-					}
-				}
-				break;
-			case HISTORY_TABLE:
-				hi = (History*)db_help->sql_all(&k);
-				//j = hi[0].num;
-				j = k;
-				cout << "j=" << j << endl;
-				_itoa(j, sendBuff, 10);
-				send(serConn, sendBuff, sizeof(sendBuff) + 1, NULL);
-				if (j != 0) {
-					for (i = 0; i < j; i++) {
-						memcpy(his1.ip, hi[i].ip.c_str(), sizeof(hi[i].ip));
-						memcpy(his1.address, hi[i].address.c_str(), sizeof(hi[i].address));
-						memcpy(his1.time, hi[i].time.c_str(), sizeof(hi[i].time));
-						memcpy(sendBuff, &his1, sizeof(his1));
-						send(serConn, sendBuff, sizeof(sendBuff) + 1, NULL);
-						cout << "sendbuff: " << sendBuff << endl;
-					}
-				}
-				break;
-			}
-			break;
-		case 'b':
-			//通过ip查询某电脑
-			com = db_help->select_computer(buff);
-			cout << "com:" << com.ip << "	" << com.online << endl;
-			memcpy(com1.ip, com.ip.c_str(), sizeof(com.ip));//Computer转Computer1
-			com1.online = com.online;
-			com1.up_speed = com.up_speed;
-			com1.down_speed = com.down_speed;
-			memcpy(sendBuff, &com1, sizeof(com1));
-			send(serConn, sendBuff, sizeof(sendBuff) + 1, NULL);
-			break;
-		case 'c':
-			//通过ip查询某电脑历史记录 
-			hi = db_help->select_history(buff);
-			k = atoi(buff);
-			cout << "k=" << k << endl;
-			_itoa(k, sendBuff, 10);
-			send(serConn, sendBuff, sizeof(sendBuff) + 1, NULL);//发送数组大小
-			for (int i = 0; i < k; i++)
-			{
-				cout << "hi:" << hi[i].ip << "	" << hi[i].address << endl;
-				memcpy(his1.ip, hi[i].ip.c_str(), sizeof(hi[i].ip));     //his转his1
-				memcpy(his1.address, hi[i].address.c_str(), sizeof(hi[i].address));
-				memcpy(his1.time, hi[i].time.c_str(), sizeof(hi[i].time));
-				memcpy(sendBuff, &his1, sizeof(his1));
-				send(serConn, sendBuff, sizeof(sendBuff) + 1, NULL);
-			}
-			break;
-		case 'd':
-			//通过ip查询某电脑禁止访问网址 
-			fo = db_help->select_forbidweb(buff);
-			k = atoi(buff);
-			_itoa(k, sendBuff, 10);
-			send(serConn, sendBuff, sizeof(sendBuff) + 1, NULL);//发送数组大小
-			for (int i = 0; i < k; i++)
-			{
-				cout << "fo" << fo[i].ip << "	" << fo[i].web << endl;
-				memcpy(fob1.ip, fo[i].ip.c_str(), sizeof(fo[i].ip));
-				memcpy(fob1.web, fo[i].web.c_str(), sizeof(fo[i].web));
-				memcpy(sendBuff, &fob1, sizeof(fob1));
-				send(serConn, sendBuff, sizeof(sendBuff) + 1, NULL);
-			}
-			break;
-		case 'e':
-			//查询登录用户
-			cus1 = *(Customer1*)buff;                        //接受的Customer1
-			b = db_help->login(cus1.name, cus1.password);	 //返回的bool
-															 //cout << "cus:" << cus.name << "	" << cus.password << "	" << cus.email << endl;
-															 //memcpy(sendBuff, &cus, sizeof(cus));
-			if (b) { memcpy(sendBuff, "1", sizeof("1")); }
-			else { memcpy(sendBuff, "0", sizeof("0")); }
-			send(serConn, sendBuff, sizeof(sendBuff) + 1, NULL);
-			break;
-		case 'f':
-			//删除某一计算机
-			b = db_help->delete_computer(buff);
-			cout << "b:" << b << endl;
-			if (b) { memcpy(sendBuff, "1", sizeof("1")); }
-			else { memcpy(sendBuff, "0", sizeof("0")); }
-			send(serConn, sendBuff, sizeof(sendBuff) + 1, NULL);
-			break;
-		case 'g':
-			//删除某个禁止访问的网址
-			fob1 = *(Forbidweb1*)buff;
-			b = db_help->delete_forbidweb(fob1.ip, fob1.web);
-			cout << "b:" << b << endl;
-			if (b) { memcpy(sendBuff, "1", sizeof("1")); }
-			else { memcpy(sendBuff, "0", sizeof("0")); }
-			send(serConn, sendBuff, sizeof(sendBuff) + 1, NULL);
-			break;
-		case 'h':
-			//删除某个敏感词
-			sen1 = *(Senstive1*)buff;
-			b = db_help->delete_senstive(sen1.ip, sen1.word);
-			cout << "b:" << b << endl;
-			if (b) { memcpy(sendBuff, "1", sizeof("1")); }
-			else { memcpy(sendBuff, "0", sizeof("0")); }
-			send(serConn, sendBuff, sizeof(sendBuff) + 1, NULL);
-			break;
-		case 'i':
-			//删除某计算机历史记录
-			b = db_help->delete_history(buff);
-			cout << "b:" << b << endl;
-			if (b) { memcpy(sendBuff, "1", sizeof("1")); }
-			else { memcpy(sendBuff, "0", sizeof("0")); }
-			send(serConn, sendBuff, sizeof(sendBuff) + 1, NULL);
-			break;
-		case 'j':
-			//插入到禁止访问网址表
-			fob1 = *(Forbidweb1*)buff;
-			fob.ip = fob1.ip;
-			fob.web = fob1.web;
-			b = db_help->insert_forbidweb(fob);
-			cout << "b:" << b << endl;
-			if (b) { memcpy(sendBuff, "1", sizeof("1")); }
-			else { memcpy(sendBuff, "0", sizeof("0")); }
-			send(serConn, sendBuff, sizeof(sendBuff) + 1, NULL);
-			break;
-		case 'k':
-			//插入到敏感词表
-			sen1 = *(Senstive1*)buff;
-			sen.ip = sen1.ip;
-			sen.word = sen1.word;
-			b = db_help->insert_senstive(sen);
-			cout << "b:" << b << endl;
-			if (b) { memcpy(sendBuff, "1", sizeof("1")); }
-			else { memcpy(sendBuff, "0", sizeof("0")); }
-			send(serConn, sendBuff, sizeof(sendBuff) + 1, NULL);
-			break;
-		case 'l':
-			//插入到计算机表
-			com1 = *(Computer1*)buff;
-			com.ip = com1.ip;
-			com.online = com1.online;
-			com.up_speed = com1.up_speed;
-			com.down_speed = com1.down_speed;
-			cout << com1.ip << "	" << com1.up_speed << "	" << com1.down_speed << "	" << com1.online << endl;
-			b = db_help->insert_computer(com);
-			cout << "b:" << b << endl;
-			if (b) { memcpy(sendBuff, "1", sizeof("1")); }
-			else { memcpy(sendBuff, "0", sizeof("0")); }
-			send(serConn, sendBuff, sizeof(sendBuff) + 1, NULL);
-			break;
-		case 'n':
-			//注册管理员
-			cus1 = *(Customer1*)buff;
-			cus.name = cus1.name;
-			cus.password = cus1.password;
-			cus.email = cus1.email;
-			b = db_help->insert_customer(cus);
-			cout << "b:" << b << endl;
-			if (b) { memcpy(sendBuff, "1", sizeof("1")); }
-			else { memcpy(sendBuff, "0", sizeof("0")); }
-			send(serConn, sendBuff, sizeof(sendBuff) + 1, NULL);
-			break;
-		case 'm':
-			//插入到历史记录表
-			his1 = *(History1*)buff;
-			his.ip = his1.ip;
-			his.address = his1.address;
-			his.time = his1.time;
-			b = db_help->insert_history(his);
-			cout << "b:" << b << endl;
-			if (b) { memcpy(sendBuff, "1", sizeof("1")); }
-			else { memcpy(sendBuff, "0", sizeof("0")); }
-			send(serConn, sendBuff, sizeof(sendBuff) + 1, NULL);
-			break;
-		case 'o':
-			//修改计算机表
-			com1 = *(Computer1*)buff;
-			com.ip = com1.ip;
-			cout << "ip:" << com.ip << endl;
-			com.online = com1.online;
-			cout << "online:" << com.online << endl;
-			b = db_help->update_computer(com);
-			if (b) { memcpy(sendBuff, "1", sizeof("1")); }
-			else { memcpy(sendBuff, "0", sizeof("0")); }
-			send(serConn, sendBuff, sizeof(sendBuff) + 1, NULL);
-			break;
-		default:
-			cout << "wrong command" << endl;
-			break;
-		}*/
-
-		closesocket(serConn);//关闭
-		//closesocket(serSocket);//关闭
-		//WSACleanup();//释放资源的操作
-		//system("pause");
-		//return 0;
-		
-	}
 	return 1;
 }

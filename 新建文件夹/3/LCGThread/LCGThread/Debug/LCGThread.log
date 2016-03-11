@@ -1,0 +1,13 @@
+﻿  TestTask.cpp
+  Task.cpp
+  stdafx.cpp
+  MyThreadPool.cpp
+  MyThread.cpp
+  MyStack.cpp
+  MyQueue.cpp
+  MyMutex.cpp
+  MyList.cpp
+  main.cpp
+  正在生成代码...
+f:\vs2015\projects\lcgthread\lcgthread\mythreadpool.cpp(76): warning C4715: “CMyThreadPool::addTask”: 不是所有的控件路径都返回值
+  LCGThread.vcxproj -> F:\vs2015\Projects\LCGThread\Debug\LCGThread.exe

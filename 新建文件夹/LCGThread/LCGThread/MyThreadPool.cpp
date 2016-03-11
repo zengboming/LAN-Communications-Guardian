@@ -1,9 +1,10 @@
 #include "MyThreadPool.h"
 #include "MyThread.h"
 #include "Task.h"
+#include "MyQueue.h"
 #include<cassert>
 #include<iostream>
-#include "MyQueue.h"
+
 CMyThreadPool::CMyThreadPool(int num)
 {
 	m_bIsExit=false;

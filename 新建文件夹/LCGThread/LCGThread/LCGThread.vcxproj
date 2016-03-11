@@ -162,7 +162,6 @@
     <ClInclude Include="struct.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="Task.h" />
-    <ClInclude Include="TEST.h" />
     <ClInclude Include="TestTask.h" />
   </ItemGroup>
   <ItemGroup>
@@ -176,7 +175,6 @@
     <ClCompile Include="MyThreadPool.cpp" />
     <ClCompile Include="stdafx.cpp" />
     <ClCompile Include="Task.cpp" />
-    <ClCompile Include="TEST.cpp" />
     <ClCompile Include="TestTask.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

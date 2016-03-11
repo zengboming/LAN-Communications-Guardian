@@ -64,12 +64,12 @@ void main()
 	memset(&sen1, 0x00, sizeof(Senstive1));
 	memset(&fob1, 0x00, sizeof(Forbidweb1));
 
-	command = 'd';
+	command = 'm';
 	switch (command)
 	{
 	case 'a':
 		//a 显示五张表中某表全部信息    
-		send(sockClient, "a3", strlen("a3") + 1, NULL);
+		send(sockClient, "a1", strlen("a1") + 1, NULL);
 		break;
 	case 'b':
 		//b 查询某电脑信息
@@ -150,8 +150,9 @@ void main()
 	case 'm':
 		//m 插入到history表
 		memcpy(his1.ip, "192.168.80.80", sizeof("192.168.80.80"));
-		memcpy(his1.address, "www.github.com", sizeof("www.github.com"));
-		memcpy(his1.time, "2016.1.18,6:00", sizeof("2016.1.18,6:00"));
+		memcpy(his1.address, "www.git22hub.com", sizeof("www.git22hub.com"));
+		memcpy(his1.time, "2016-03-07 11:22:33", sizeof("2016-03-07 11:22:33"));
+		cout << "size:"<<sizeof("2016-03-07 11:22:33") << endl;
 		memcpy(buff, &his1, sizeof(his1));
 		sendBuff[0] = 'm';
 		memcpy(sendBuff + 1, buff, sizeof(buff));
@@ -169,26 +170,53 @@ void main()
 		break;
 	case 'o':
 		memcpy(com1.ip, "192.168.50.50", sizeof("192.168.40.40"));
-		com1.online = 1;
+		com1.online = 0;
 		memcpy(buff, &com1, sizeof(com1));
 		sendBuff[0] = 'o';
 		memcpy(sendBuff + 1, buff, sizeof(buff));
 		send(sockClient, sendBuff, sizeof(sendBuff) + 1, NULL);
 		break;
+	case 'p':
+		memcpy(com1.ip, "BC:30:7D:E7:97:A0", sizeof("BC:30:7D:E7:97:A0"));
+		com1.up_speed=20.15;
+		com1.down_speed = 30.28;
+		memcpy(buff, &com1, sizeof(com1));
+		sendBuff[0] = 'p';
+		memcpy(sendBuff + 1, buff, sizeof(buff));
+		send(sockClient, sendBuff, sizeof(sendBuff) + 1, NULL);
+		break;
+	case 'q':
+		send(sockClient, "q", strlen("q") + 1, NULL);
+		break;
+
 	}
 	//cout << "ok" << endl;
+	//char* path = "D://sen.txt";
+	//ofstream oWrite;
+	//oWrite.open(path, ios::binary);
+	//char cBuf[200] = { 0 };
+		send(sockClient, "a1", strlen("a1") + 1, NULL);
+		char num[3];
+		memset(num, 0, 3);
+		recv(sockClient, num, 3, NULL);
+		cout << "num:" << num << endl;
 
-	for (int i = 0; i < 4; i++) {
-		cout << "接收服务器返回的消息recvBuff:";
-		char recvBuff[200];
-		memset(recvBuff, 0, 200);
-		recv(sockClient, recvBuff, 200, 0);
-		for (int i = 0; i < sizeof(recvBuff); i++) {
-			cout << recvBuff[i];
+		for (int i = 0; i < atoi(num); i++) {
+			cout << "接收服务器返回的消息recvBuff:";
+			char recvBuff[200];
+			memset(recvBuff, 0, 200);
+			recv(sockClient, recvBuff, 201, NULL);
+			com1 = *(Computer1*)recvBuff;
+			cout << "ip:" << com1.ip << "up:" << com1.up_speed<<"down"<<com1.down_speed << endl;
+			/*memset(cBuf, 0, 200);
+			recv(sockClient, cBuf, 200, 0);
+
+			oWrite.write(cBuf, 200);
+			oWrite << endl;
+	*/
+
 		}
-		cout << endl;
-	}
-
+	/*oWrite.close();*/
 	/*memcpy(hi1[0].ip, "192.168", sizeof("192.168"));
 	memcpy(hi1[0].address, "www.baidu.com", sizeof("www.baidu.com"));
 	memcpy(hi1[0].time, "2016.1.18", sizeof("2016.1.18"));
