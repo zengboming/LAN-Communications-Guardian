@@ -1,0 +1,6 @@
+﻿  main.cpp
+  db.cpp
+f:\vs2015\projects\consoleapplication3\consoleapplication3\db.cpp(47): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+f:\vs2015\projects\consoleapplication3\consoleapplication3\db.cpp(114): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+  正在生成代码...
+  ConsoleApplication3.vcxproj -> F:\vs2015\Projects\ConsoleApplication3\x64\Debug\BankSystem.exe

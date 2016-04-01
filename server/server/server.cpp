@@ -64,7 +64,8 @@ void main()
 	memset(&sen1, 0x00, sizeof(Senstive1));
 	memset(&fob1, 0x00, sizeof(Forbidweb1));
 
-	command = 'm';
+
+	command = 'l';
 	switch (command)
 	{
 	case 'a':
@@ -77,11 +78,13 @@ void main()
 		break;
 	case 'c':
 		//c 查询某电脑历史记录
-		send(sockClient, "c192.168.80.80", strlen("c192.168.80.80") + 1, NULL);
+		/*send(sockClient, "c192.168.80.80", strlen("c192.168.80.80") + 1, NULL);*/
+		send(sockClient, "101,c,2016-3-30,1234", strlen("101,c,2016-3-30,1234") + 1, NULL);
 		break;
 	case 'd':
 		//d 查询某电脑禁止访问的网站
-		send(sockClient, "d192.168.90.90", strlen("d192.168.90.90") + 1, NULL);
+		/*send(sockClient, "d192.168.90.90", strlen("d192.168.90.90") + 1, NULL);*/
+		send(sockClient, "101,d,2016-3-30,500", strlen("101,c,2016-3-30,500") + 1, NULL);
 		break;
 	case 'e':
 		//e 查询登录用户
@@ -137,6 +140,7 @@ void main()
 		send(sockClient, sendBuff, sizeof(sendBuff) + 1, NULL);
 		break;
 	case 'l':
+		/*
 		//l 插入到computer表
 		memcpy(com1.ip, "192.168.40.40", sizeof("192.168.40.40"));
 		com1.online = 1;
@@ -146,6 +150,8 @@ void main()
 		sendBuff[0] = 'l';
 		memcpy(sendBuff + 1, buff, sizeof(buff));
 		send(sockClient, sendBuff, sizeof(sendBuff) + 1, NULL);
+		*/
+		send(sockClient, "101,l,2016-3-30,123456", sizeof("101,l,2016-3-30,123456") + 1, NULL);
 		break;
 	case 'm':
 		//m 插入到history表
@@ -188,17 +194,18 @@ void main()
 	case 'q':
 		send(sockClient, "q", strlen("q") + 1, NULL);
 		break;
-
+	case 'w':
+		send(sockClient, "101,w,2016-3-30,20000", strlen("101,c,2016-3-30,20000") + 1, NULL);
 	}
 	//cout << "ok" << endl;
 	//char* path = "D://sen.txt";
 	//ofstream oWrite;
 	//oWrite.open(path, ios::binary);
 	//char cBuf[200] = { 0 };
-		send(sockClient, "a1", strlen("a1") + 1, NULL);
-		char num[3];
-		memset(num, 0, 3);
-		recv(sockClient, num, 3, NULL);
+		//send(sockClient, "a1", strlen("a1") + 1, NULL);
+		char num[10];
+		//memset(num, 0, 3);
+		recv(sockClient, num, 10, NULL);
 		cout << "num:" << num << endl;
 
 		for (int i = 0; i < atoi(num); i++) {

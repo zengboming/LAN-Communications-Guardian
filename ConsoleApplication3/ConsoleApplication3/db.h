@@ -2,8 +2,6 @@
 #include "windows.h"
 #include "winsock.h"
 #include "mysql.h"
-#include <iostream>
-using namespace std;
 
 class DateBase
 {
@@ -20,4 +18,11 @@ private:
 	MYSQL_RES   *result;
 	MYSQL_ROW   row;
 	MYSQL_FIELD *fd;
+public:
+	DateBase();
+	~DateBase();
+	int login(int id,char* password);    //µ«¬º     L
+	int deposit(int id,int money);		 //¥Ê«Æ     D
+	int withdrawal(int id,int money);	 //»°«Æ     W
+	int check(int id);                   //≤È—Ø”‡∂Ó C
 };
